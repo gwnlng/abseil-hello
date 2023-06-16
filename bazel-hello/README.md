@@ -16,3 +16,7 @@ To run the tests
 ```bash
 bazel test //:hello_test
 ```
+
+```bash
+bazel query "deps(:hello_main)" --noimplicit_deps --output xml > bazel_deps.xml
+```

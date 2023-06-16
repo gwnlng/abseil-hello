@@ -1,0 +1,2352 @@
+<?xml version="1.1" encoding="UTF-8" standalone="no"?>
+<query version="2">
+    <rule class="cc_library" location="/Users/gwunleong/VSCodeProjects/abseil-hello/bazel-hello/BUILD.bazel:17:11" name="//:hello">
+        <string name="name" value="hello"/>
+        <list name="tags">
+            <string value="__CC_RULES_MIGRATION_DO_NOT_USE_WILL_BREAK__"/>
+        </list>
+        <string name="generator_name" value="hello"/>
+        <string name="generator_function" value="cc_library"/>
+        <string name="generator_location" value="/Users/gwunleong/VSCodeProjects/abseil-hello/bazel-hello/BUILD.bazel:17:11"/>
+        <list name="srcs">
+            <label value="//:hello.cc"/>
+        </list>
+        <list name="hdrs">
+            <label value="//:hello.h"/>
+        </list>
+        <list name="deps">
+            <label value="@com_google_absl//absl/strings:strings"/>
+        </list>
+        <rule-input name="//:hello.cc"/>
+        <rule-input name="//:hello.h"/>
+        <rule-input name="@com_google_absl//absl/strings:strings"/>
+    </rule>
+    <source-file location="/Users/gwunleong/VSCodeProjects/abseil-hello/bazel-hello/hello.cc:1:1" name="//:hello.cc">
+        <visibility-label name="//visibility:private"/>
+    </source-file>
+    <source-file location="/Users/gwunleong/VSCodeProjects/abseil-hello/bazel-hello/hello.h:1:1" name="//:hello.h">
+        <visibility-label name="//visibility:private"/>
+    </source-file>
+    <rule class="cc_binary" location="/Users/gwunleong/VSCodeProjects/abseil-hello/bazel-hello/BUILD.bazel:35:10" name="//:hello_main">
+        <string name="name" value="hello_main"/>
+        <list name="tags">
+            <string value="__CC_RULES_MIGRATION_DO_NOT_USE_WILL_BREAK__"/>
+        </list>
+        <string name="generator_name" value="hello_main"/>
+        <string name="generator_function" value="cc_binary"/>
+        <string name="generator_location" value="/Users/gwunleong/VSCodeProjects/abseil-hello/bazel-hello/BUILD.bazel:35:10"/>
+        <list name="srcs">
+            <label value="//:hello_main.cc"/>
+        </list>
+        <list name="deps">
+            <label value="//:hello"/>
+        </list>
+        <rule-input name="//:hello"/>
+        <rule-input name="//:hello_main.cc"/>
+        <rule-output name="//:hello_main.stripped"/>
+        <rule-output name="//:hello_main.dwp"/>
+    </rule>
+    <source-file location="/Users/gwunleong/VSCodeProjects/abseil-hello/bazel-hello/hello_main.cc:1:1" name="//:hello_main.cc">
+        <visibility-label name="//visibility:private"/>
+    </source-file>
+    <rule class="compiler_flag" location="/private/var/tmp/_bazel_gwunleong/1cf6e3157016003ad3c69ac77713090f/external/bazel_tools/tools/cpp/BUILD:165:14" name="@bazel_tools//tools/cpp:compiler">
+        <string name="name" value="compiler"/>
+    </rule>
+    <rule class="config_setting" location="/private/var/tmp/_bazel_gwunleong/1cf6e3157016003ad3c69ac77713090f/external/com_google_absl/absl/BUILD.bazel:38:15" name="@com_google_absl//absl:clang-cl_compiler">
+        <string name="name" value="clang-cl_compiler"/>
+        <list name="visibility">
+            <label value="@com_google_absl//absl:__subpackages__"/>
+        </list>
+        <dict name="flag_values">
+            <pair>
+                <label value="@bazel_tools//tools/cpp:compiler"/>
+                <string value="clang-cl"/>
+            </pair>
+        </dict>
+        <rule-input name="@bazel_tools//tools/cpp:compiler"/>
+    </rule>
+    <rule class="config_setting" location="/private/var/tmp/_bazel_gwunleong/1cf6e3157016003ad3c69ac77713090f/external/com_google_absl/absl/BUILD.bazel:22:15" name="@com_google_absl//absl:clang_compiler">
+        <string name="name" value="clang_compiler"/>
+        <list name="visibility">
+            <label value="@com_google_absl//absl:__subpackages__"/>
+        </list>
+        <dict name="flag_values">
+            <pair>
+                <label value="@bazel_tools//tools/cpp:compiler"/>
+                <string value="clang"/>
+            </pair>
+        </dict>
+        <rule-input name="@bazel_tools//tools/cpp:compiler"/>
+    </rule>
+    <rule class="config_setting" location="/private/var/tmp/_bazel_gwunleong/1cf6e3157016003ad3c69ac77713090f/external/com_google_absl/absl/BUILD.bazel:68:15" name="@com_google_absl//absl:cpu_wasm">
+        <string name="name" value="cpu_wasm"/>
+        <list name="visibility">
+            <label value="@com_google_absl//absl:__subpackages__"/>
+        </list>
+        <dict name="values">
+            <pair>
+                <string value="cpu"/>
+                <string value="wasm"/>
+            </pair>
+        </dict>
+    </rule>
+    <rule class="config_setting" location="/private/var/tmp/_bazel_gwunleong/1cf6e3157016003ad3c69ac77713090f/external/com_google_absl/absl/BUILD.bazel:76:15" name="@com_google_absl//absl:cpu_wasm32">
+        <string name="name" value="cpu_wasm32"/>
+        <list name="visibility">
+            <label value="@com_google_absl//absl:__subpackages__"/>
+        </list>
+        <dict name="values">
+            <pair>
+                <string value="cpu"/>
+                <string value="wasm32"/>
+            </pair>
+        </dict>
+    </rule>
+    <rule class="config_setting" location="/private/var/tmp/_bazel_gwunleong/1cf6e3157016003ad3c69ac77713090f/external/com_google_absl/absl/BUILD.bazel:30:15" name="@com_google_absl//absl:msvc_compiler">
+        <string name="name" value="msvc_compiler"/>
+        <list name="visibility">
+            <label value="@com_google_absl//absl:__subpackages__"/>
+        </list>
+        <dict name="flag_values">
+            <pair>
+                <label value="@bazel_tools//tools/cpp:compiler"/>
+                <string value="msvc-cl"/>
+            </pair>
+        </dict>
+        <rule-input name="@bazel_tools//tools/cpp:compiler"/>
+    </rule>
+    <rule class="config_setting" location="/private/var/tmp/_bazel_gwunleong/1cf6e3157016003ad3c69ac77713090f/external/com_google_absl/absl/BUILD.bazel:84:15" name="@com_google_absl//absl:platforms_wasm32">
+        <string name="name" value="platforms_wasm32"/>
+        <list name="visibility">
+            <label value="@com_google_absl//absl:__subpackages__"/>
+        </list>
+        <list name="constraint_values">
+            <label value="@platforms//cpu:wasm32"/>
+        </list>
+        <rule-input name="@platforms//cpu:wasm32"/>
+    </rule>
+    <rule class="config_setting" location="/private/var/tmp/_bazel_gwunleong/1cf6e3157016003ad3c69ac77713090f/external/com_google_absl/absl/BUILD.bazel:92:15" name="@com_google_absl//absl:platforms_wasm64">
+        <string name="name" value="platforms_wasm64"/>
+        <list name="visibility">
+            <label value="@com_google_absl//absl:__subpackages__"/>
+        </list>
+        <list name="constraint_values">
+            <label value="@platforms//cpu:wasm64"/>
+        </list>
+        <rule-input name="@platforms//cpu:wasm64"/>
+    </rule>
+    <rule class="alias" location="/private/var/tmp/_bazel_gwunleong/1cf6e3157016003ad3c69ac77713090f/external/com_google_absl/absl/BUILD.bazel:100:29" name="@com_google_absl//absl:wasm">
+        <string name="name" value="wasm"/>
+        <list name="visibility">
+            <label value="@com_google_absl//absl:__subpackages__"/>
+        </list>
+        <string name="generator_name" value="wasm"/>
+        <string name="generator_function" value="_config_setting_group"/>
+        <string name="generator_location" value="absl/absl/BUILD.bazel:100:29"/>
+        <label configurable="yes" name="actual"/>
+        <rule-input name="@com_google_absl//absl:cpu_wasm"/>
+        <rule-input name="@com_google_absl//absl:wasm_2"/>
+    </rule>
+    <rule class="alias" location="/private/var/tmp/_bazel_gwunleong/1cf6e3157016003ad3c69ac77713090f/external/com_google_absl/absl/BUILD.bazel:100:29" name="@com_google_absl//absl:wasm_2">
+        <string name="name" value="wasm_2"/>
+        <list name="visibility">
+            <label value="//visibility:private"/>
+        </list>
+        <string name="generator_name" value="wasm"/>
+        <string name="generator_function" value="_config_setting_group"/>
+        <string name="generator_location" value="absl/absl/BUILD.bazel:100:29"/>
+        <label configurable="yes" name="actual"/>
+        <rule-input name="@com_google_absl//absl:cpu_wasm32"/>
+        <rule-input name="@com_google_absl//absl:wasm_3"/>
+    </rule>
+    <rule class="alias" location="/private/var/tmp/_bazel_gwunleong/1cf6e3157016003ad3c69ac77713090f/external/com_google_absl/absl/BUILD.bazel:100:29" name="@com_google_absl//absl:wasm_3">
+        <string name="name" value="wasm_3"/>
+        <list name="visibility">
+            <label value="//visibility:private"/>
+        </list>
+        <string name="generator_name" value="wasm"/>
+        <string name="generator_function" value="_config_setting_group"/>
+        <string name="generator_location" value="absl/absl/BUILD.bazel:100:29"/>
+        <label configurable="yes" name="actual"/>
+        <rule-input name="@com_google_absl//absl:platforms_wasm32"/>
+        <rule-input name="@com_google_absl//absl:platforms_wasm64"/>
+    </rule>
+    <rule class="cc_library" location="/private/var/tmp/_bazel_gwunleong/1cf6e3157016003ad3c69ac77713090f/external/com_google_absl/absl/base/BUILD.bazel:28:11" name="@com_google_absl//absl/base:atomic_hook">
+        <string name="name" value="atomic_hook"/>
+        <list name="visibility">
+            <label value="@com_google_absl//absl:__subpackages__"/>
+        </list>
+        <list name="hdrs">
+            <label value="@com_google_absl//absl/base:internal/atomic_hook.h"/>
+        </list>
+        <list name="linkopts">
+            <string value="-ignore:4221"/>
+        </list>
+        <list name="copts">
+            <string value="/W3"/>
+            <string value="/DNOMINMAX"/>
+            <string value="/DWIN32_LEAN_AND_MEAN"/>
+            <string value="/D_CRT_SECURE_NO_WARNINGS"/>
+            <string value="/D_SCL_SECURE_NO_WARNINGS"/>
+            <string value="/D_ENABLE_EXTENDED_ALIGNED_STORAGE"/>
+            <string value="/bigobj"/>
+            <string value="/wd4005"/>
+            <string value="/wd4068"/>
+            <string value="/wd4180"/>
+            <string value="/wd4244"/>
+            <string value="/wd4267"/>
+            <string value="/wd4503"/>
+            <string value="/wd4800"/>
+            <string value="/W3"/>
+            <string value="/DNOMINMAX"/>
+            <string value="/DWIN32_LEAN_AND_MEAN"/>
+            <string value="/D_CRT_SECURE_NO_WARNINGS"/>
+            <string value="/D_SCL_SECURE_NO_WARNINGS"/>
+            <string value="/D_ENABLE_EXTENDED_ALIGNED_STORAGE"/>
+            <string value="-Wall"/>
+            <string value="-Wextra"/>
+            <string value="-Wcast-qual"/>
+            <string value="-Wconversion"/>
+            <string value="-Wfloat-overflow-conversion"/>
+            <string value="-Wfloat-zero-conversion"/>
+            <string value="-Wfor-loop-analysis"/>
+            <string value="-Wformat-security"/>
+            <string value="-Wgnu-redeclared-enum"/>
+            <string value="-Winfinite-recursion"/>
+            <string value="-Winvalid-constexpr"/>
+            <string value="-Wliteral-conversion"/>
+            <string value="-Wmissing-declarations"/>
+            <string value="-Woverlength-strings"/>
+            <string value="-Wpointer-arith"/>
+            <string value="-Wself-assign"/>
+            <string value="-Wshadow-all"/>
+            <string value="-Wstring-conversion"/>
+            <string value="-Wtautological-overlap-compare"/>
+            <string value="-Wundef"/>
+            <string value="-Wuninitialized"/>
+            <string value="-Wunreachable-code"/>
+            <string value="-Wunused-comparison"/>
+            <string value="-Wunused-local-typedefs"/>
+            <string value="-Wunused-result"/>
+            <string value="-Wvla"/>
+            <string value="-Wwrite-strings"/>
+            <string value="-Wno-float-conversion"/>
+            <string value="-Wno-implicit-float-conversion"/>
+            <string value="-Wno-implicit-int-float-conversion"/>
+            <string value="-Wno-implicit-int-conversion"/>
+            <string value="-Wno-shorten-64-to-32"/>
+            <string value="-Wno-sign-conversion"/>
+            <string value="-Wno-unknown-warning-option"/>
+            <string value="-DNOMINMAX"/>
+            <string value="-Wall"/>
+            <string value="-Wextra"/>
+            <string value="-Wcast-qual"/>
+            <string value="-Wconversion-null"/>
+            <string value="-Wformat-security"/>
+            <string value="-Wmissing-declarations"/>
+            <string value="-Woverlength-strings"/>
+            <string value="-Wpointer-arith"/>
+            <string value="-Wundef"/>
+            <string value="-Wunused-local-typedefs"/>
+            <string value="-Wunused-result"/>
+            <string value="-Wvarargs"/>
+            <string value="-Wvla"/>
+            <string value="-Wwrite-strings"/>
+            <string value="-DNOMINMAX"/>
+        </list>
+        <list name="deps">
+            <label value="@com_google_absl//absl/base:config"/>
+            <label value="@com_google_absl//absl/base:core_headers"/>
+        </list>
+        <rule-input name="@com_google_absl//absl:clang-cl_compiler"/>
+        <rule-input name="@com_google_absl//absl:clang_compiler"/>
+        <rule-input name="@com_google_absl//absl:msvc_compiler"/>
+        <rule-input name="@com_google_absl//absl/base:config"/>
+        <rule-input name="@com_google_absl//absl/base:core_headers"/>
+        <rule-input name="@com_google_absl//absl/base:internal/atomic_hook.h"/>
+    </rule>
+    <source-file location="/private/var/tmp/_bazel_gwunleong/1cf6e3157016003ad3c69ac77713090f/external/com_google_absl/absl/base/attributes.h:1:1" name="@com_google_absl//absl/base:attributes.h">
+        <visibility-label name="//visibility:public"/>
+    </source-file>
+    <rule class="cc_library" location="/private/var/tmp/_bazel_gwunleong/1cf6e3157016003ad3c69ac77713090f/external/com_google_absl/absl/base/BUILD.bazel:203:11" name="@com_google_absl//absl/base:base">
+        <string name="name" value="base"/>
+        <list name="srcs">
+            <label value="@com_google_absl//absl/base:internal/cycleclock.cc"/>
+            <label value="@com_google_absl//absl/base:internal/spinlock.cc"/>
+            <label value="@com_google_absl//absl/base:internal/sysinfo.cc"/>
+            <label value="@com_google_absl//absl/base:internal/thread_identity.cc"/>
+            <label value="@com_google_absl//absl/base:internal/unscaledcycleclock.cc"/>
+        </list>
+        <list name="hdrs">
+            <label value="@com_google_absl//absl/base:call_once.h"/>
+            <label value="@com_google_absl//absl/base:casts.h"/>
+            <label value="@com_google_absl//absl/base:internal/cycleclock.h"/>
+            <label value="@com_google_absl//absl/base:internal/low_level_scheduling.h"/>
+            <label value="@com_google_absl//absl/base:internal/per_thread_tls.h"/>
+            <label value="@com_google_absl//absl/base:internal/spinlock.h"/>
+            <label value="@com_google_absl//absl/base:internal/sysinfo.h"/>
+            <label value="@com_google_absl//absl/base:internal/thread_identity.h"/>
+            <label value="@com_google_absl//absl/base:internal/tsan_mutex_interface.h"/>
+            <label value="@com_google_absl//absl/base:internal/unscaledcycleclock.h"/>
+        </list>
+        <list name="linkopts">
+            <string value="-DEFAULTLIB:advapi32.lib"/>
+            <string value="-DEFAULTLIB:advapi32.lib"/>
+            <string value="-pthread"/>
+            <string value="-ignore:4221"/>
+        </list>
+        <list name="copts">
+            <string value="/W3"/>
+            <string value="/DNOMINMAX"/>
+            <string value="/DWIN32_LEAN_AND_MEAN"/>
+            <string value="/D_CRT_SECURE_NO_WARNINGS"/>
+            <string value="/D_SCL_SECURE_NO_WARNINGS"/>
+            <string value="/D_ENABLE_EXTENDED_ALIGNED_STORAGE"/>
+            <string value="/bigobj"/>
+            <string value="/wd4005"/>
+            <string value="/wd4068"/>
+            <string value="/wd4180"/>
+            <string value="/wd4244"/>
+            <string value="/wd4267"/>
+            <string value="/wd4503"/>
+            <string value="/wd4800"/>
+            <string value="/W3"/>
+            <string value="/DNOMINMAX"/>
+            <string value="/DWIN32_LEAN_AND_MEAN"/>
+            <string value="/D_CRT_SECURE_NO_WARNINGS"/>
+            <string value="/D_SCL_SECURE_NO_WARNINGS"/>
+            <string value="/D_ENABLE_EXTENDED_ALIGNED_STORAGE"/>
+            <string value="-Wall"/>
+            <string value="-Wextra"/>
+            <string value="-Wcast-qual"/>
+            <string value="-Wconversion"/>
+            <string value="-Wfloat-overflow-conversion"/>
+            <string value="-Wfloat-zero-conversion"/>
+            <string value="-Wfor-loop-analysis"/>
+            <string value="-Wformat-security"/>
+            <string value="-Wgnu-redeclared-enum"/>
+            <string value="-Winfinite-recursion"/>
+            <string value="-Winvalid-constexpr"/>
+            <string value="-Wliteral-conversion"/>
+            <string value="-Wmissing-declarations"/>
+            <string value="-Woverlength-strings"/>
+            <string value="-Wpointer-arith"/>
+            <string value="-Wself-assign"/>
+            <string value="-Wshadow-all"/>
+            <string value="-Wstring-conversion"/>
+            <string value="-Wtautological-overlap-compare"/>
+            <string value="-Wundef"/>
+            <string value="-Wuninitialized"/>
+            <string value="-Wunreachable-code"/>
+            <string value="-Wunused-comparison"/>
+            <string value="-Wunused-local-typedefs"/>
+            <string value="-Wunused-result"/>
+            <string value="-Wvla"/>
+            <string value="-Wwrite-strings"/>
+            <string value="-Wno-float-conversion"/>
+            <string value="-Wno-implicit-float-conversion"/>
+            <string value="-Wno-implicit-int-float-conversion"/>
+            <string value="-Wno-implicit-int-conversion"/>
+            <string value="-Wno-shorten-64-to-32"/>
+            <string value="-Wno-sign-conversion"/>
+            <string value="-Wno-unknown-warning-option"/>
+            <string value="-DNOMINMAX"/>
+            <string value="-Wall"/>
+            <string value="-Wextra"/>
+            <string value="-Wcast-qual"/>
+            <string value="-Wconversion-null"/>
+            <string value="-Wformat-security"/>
+            <string value="-Wmissing-declarations"/>
+            <string value="-Woverlength-strings"/>
+            <string value="-Wpointer-arith"/>
+            <string value="-Wundef"/>
+            <string value="-Wunused-local-typedefs"/>
+            <string value="-Wunused-result"/>
+            <string value="-Wvarargs"/>
+            <string value="-Wvla"/>
+            <string value="-Wwrite-strings"/>
+            <string value="-DNOMINMAX"/>
+        </list>
+        <list name="deps">
+            <label value="@com_google_absl//absl/base:atomic_hook"/>
+            <label value="@com_google_absl//absl/base:base_internal"/>
+            <label value="@com_google_absl//absl/base:config"/>
+            <label value="@com_google_absl//absl/base:core_headers"/>
+            <label value="@com_google_absl//absl/base:dynamic_annotations"/>
+            <label value="@com_google_absl//absl/base:log_severity"/>
+            <label value="@com_google_absl//absl/base:raw_logging_internal"/>
+            <label value="@com_google_absl//absl/base:spinlock_wait"/>
+            <label value="@com_google_absl//absl/meta:type_traits"/>
+        </list>
+        <rule-input name="@com_google_absl//absl:clang-cl_compiler"/>
+        <rule-input name="@com_google_absl//absl:clang_compiler"/>
+        <rule-input name="@com_google_absl//absl:msvc_compiler"/>
+        <rule-input name="@com_google_absl//absl:wasm"/>
+        <rule-input name="@com_google_absl//absl/base:atomic_hook"/>
+        <rule-input name="@com_google_absl//absl/base:base_internal"/>
+        <rule-input name="@com_google_absl//absl/base:call_once.h"/>
+        <rule-input name="@com_google_absl//absl/base:casts.h"/>
+        <rule-input name="@com_google_absl//absl/base:config"/>
+        <rule-input name="@com_google_absl//absl/base:core_headers"/>
+        <rule-input name="@com_google_absl//absl/base:dynamic_annotations"/>
+        <rule-input name="@com_google_absl//absl/base:internal/cycleclock.cc"/>
+        <rule-input name="@com_google_absl//absl/base:internal/cycleclock.h"/>
+        <rule-input name="@com_google_absl//absl/base:internal/low_level_scheduling.h"/>
+        <rule-input name="@com_google_absl//absl/base:internal/per_thread_tls.h"/>
+        <rule-input name="@com_google_absl//absl/base:internal/spinlock.cc"/>
+        <rule-input name="@com_google_absl//absl/base:internal/spinlock.h"/>
+        <rule-input name="@com_google_absl//absl/base:internal/sysinfo.cc"/>
+        <rule-input name="@com_google_absl//absl/base:internal/sysinfo.h"/>
+        <rule-input name="@com_google_absl//absl/base:internal/thread_identity.cc"/>
+        <rule-input name="@com_google_absl//absl/base:internal/thread_identity.h"/>
+        <rule-input name="@com_google_absl//absl/base:internal/tsan_mutex_interface.h"/>
+        <rule-input name="@com_google_absl//absl/base:internal/unscaledcycleclock.cc"/>
+        <rule-input name="@com_google_absl//absl/base:internal/unscaledcycleclock.h"/>
+        <rule-input name="@com_google_absl//absl/base:log_severity"/>
+        <rule-input name="@com_google_absl//absl/base:raw_logging_internal"/>
+        <rule-input name="@com_google_absl//absl/base:spinlock_wait"/>
+        <rule-input name="@com_google_absl//absl/meta:type_traits"/>
+    </rule>
+    <rule class="cc_library" location="/private/var/tmp/_bazel_gwunleong/1cf6e3157016003ad3c69ac77713090f/external/com_google_absl/absl/base/BUILD.bazel:183:11" name="@com_google_absl//absl/base:base_internal">
+        <string name="name" value="base_internal"/>
+        <list name="visibility">
+            <label value="@com_google_absl//absl:__subpackages__"/>
+        </list>
+        <list name="hdrs">
+            <label value="@com_google_absl//absl/base:internal/hide_ptr.h"/>
+            <label value="@com_google_absl//absl/base:internal/identity.h"/>
+            <label value="@com_google_absl//absl/base:internal/inline_variable.h"/>
+            <label value="@com_google_absl//absl/base:internal/invoke.h"/>
+            <label value="@com_google_absl//absl/base:internal/scheduling_mode.h"/>
+        </list>
+        <list name="linkopts">
+            <string value="-ignore:4221"/>
+        </list>
+        <list name="copts">
+            <string value="/W3"/>
+            <string value="/DNOMINMAX"/>
+            <string value="/DWIN32_LEAN_AND_MEAN"/>
+            <string value="/D_CRT_SECURE_NO_WARNINGS"/>
+            <string value="/D_SCL_SECURE_NO_WARNINGS"/>
+            <string value="/D_ENABLE_EXTENDED_ALIGNED_STORAGE"/>
+            <string value="/bigobj"/>
+            <string value="/wd4005"/>
+            <string value="/wd4068"/>
+            <string value="/wd4180"/>
+            <string value="/wd4244"/>
+            <string value="/wd4267"/>
+            <string value="/wd4503"/>
+            <string value="/wd4800"/>
+            <string value="/W3"/>
+            <string value="/DNOMINMAX"/>
+            <string value="/DWIN32_LEAN_AND_MEAN"/>
+            <string value="/D_CRT_SECURE_NO_WARNINGS"/>
+            <string value="/D_SCL_SECURE_NO_WARNINGS"/>
+            <string value="/D_ENABLE_EXTENDED_ALIGNED_STORAGE"/>
+            <string value="-Wall"/>
+            <string value="-Wextra"/>
+            <string value="-Wcast-qual"/>
+            <string value="-Wconversion"/>
+            <string value="-Wfloat-overflow-conversion"/>
+            <string value="-Wfloat-zero-conversion"/>
+            <string value="-Wfor-loop-analysis"/>
+            <string value="-Wformat-security"/>
+            <string value="-Wgnu-redeclared-enum"/>
+            <string value="-Winfinite-recursion"/>
+            <string value="-Winvalid-constexpr"/>
+            <string value="-Wliteral-conversion"/>
+            <string value="-Wmissing-declarations"/>
+            <string value="-Woverlength-strings"/>
+            <string value="-Wpointer-arith"/>
+            <string value="-Wself-assign"/>
+            <string value="-Wshadow-all"/>
+            <string value="-Wstring-conversion"/>
+            <string value="-Wtautological-overlap-compare"/>
+            <string value="-Wundef"/>
+            <string value="-Wuninitialized"/>
+            <string value="-Wunreachable-code"/>
+            <string value="-Wunused-comparison"/>
+            <string value="-Wunused-local-typedefs"/>
+            <string value="-Wunused-result"/>
+            <string value="-Wvla"/>
+            <string value="-Wwrite-strings"/>
+            <string value="-Wno-float-conversion"/>
+            <string value="-Wno-implicit-float-conversion"/>
+            <string value="-Wno-implicit-int-float-conversion"/>
+            <string value="-Wno-implicit-int-conversion"/>
+            <string value="-Wno-shorten-64-to-32"/>
+            <string value="-Wno-sign-conversion"/>
+            <string value="-Wno-unknown-warning-option"/>
+            <string value="-DNOMINMAX"/>
+            <string value="-Wall"/>
+            <string value="-Wextra"/>
+            <string value="-Wcast-qual"/>
+            <string value="-Wconversion-null"/>
+            <string value="-Wformat-security"/>
+            <string value="-Wmissing-declarations"/>
+            <string value="-Woverlength-strings"/>
+            <string value="-Wpointer-arith"/>
+            <string value="-Wundef"/>
+            <string value="-Wunused-local-typedefs"/>
+            <string value="-Wunused-result"/>
+            <string value="-Wvarargs"/>
+            <string value="-Wvla"/>
+            <string value="-Wwrite-strings"/>
+            <string value="-DNOMINMAX"/>
+        </list>
+        <list name="deps">
+            <label value="@com_google_absl//absl/base:config"/>
+            <label value="@com_google_absl//absl/meta:type_traits"/>
+        </list>
+        <rule-input name="@com_google_absl//absl:clang-cl_compiler"/>
+        <rule-input name="@com_google_absl//absl:clang_compiler"/>
+        <rule-input name="@com_google_absl//absl:msvc_compiler"/>
+        <rule-input name="@com_google_absl//absl/base:config"/>
+        <rule-input name="@com_google_absl//absl/base:internal/hide_ptr.h"/>
+        <rule-input name="@com_google_absl//absl/base:internal/identity.h"/>
+        <rule-input name="@com_google_absl//absl/base:internal/inline_variable.h"/>
+        <rule-input name="@com_google_absl//absl/base:internal/invoke.h"/>
+        <rule-input name="@com_google_absl//absl/base:internal/scheduling_mode.h"/>
+        <rule-input name="@com_google_absl//absl/meta:type_traits"/>
+    </rule>
+    <source-file location="/private/var/tmp/_bazel_gwunleong/1cf6e3157016003ad3c69ac77713090f/external/com_google_absl/absl/base/call_once.h:1:1" name="@com_google_absl//absl/base:call_once.h">
+        <visibility-label name="//visibility:public"/>
+    </source-file>
+    <source-file location="/private/var/tmp/_bazel_gwunleong/1cf6e3157016003ad3c69ac77713090f/external/com_google_absl/absl/base/casts.h:1:1" name="@com_google_absl//absl/base:casts.h">
+        <visibility-label name="//visibility:public"/>
+    </source-file>
+    <rule class="cc_library" location="/private/var/tmp/_bazel_gwunleong/1cf6e3157016003ad3c69ac77713090f/external/com_google_absl/absl/base/BUILD.bazel:105:11" name="@com_google_absl//absl/base:config">
+        <string name="name" value="config"/>
+        <list name="hdrs">
+            <label value="@com_google_absl//absl/base:config.h"/>
+            <label value="@com_google_absl//absl/base:options.h"/>
+            <label value="@com_google_absl//absl/base:policy_checks.h"/>
+        </list>
+        <list name="linkopts">
+            <string value="-ignore:4221"/>
+        </list>
+        <list name="copts">
+            <string value="/W3"/>
+            <string value="/DNOMINMAX"/>
+            <string value="/DWIN32_LEAN_AND_MEAN"/>
+            <string value="/D_CRT_SECURE_NO_WARNINGS"/>
+            <string value="/D_SCL_SECURE_NO_WARNINGS"/>
+            <string value="/D_ENABLE_EXTENDED_ALIGNED_STORAGE"/>
+            <string value="/bigobj"/>
+            <string value="/wd4005"/>
+            <string value="/wd4068"/>
+            <string value="/wd4180"/>
+            <string value="/wd4244"/>
+            <string value="/wd4267"/>
+            <string value="/wd4503"/>
+            <string value="/wd4800"/>
+            <string value="/W3"/>
+            <string value="/DNOMINMAX"/>
+            <string value="/DWIN32_LEAN_AND_MEAN"/>
+            <string value="/D_CRT_SECURE_NO_WARNINGS"/>
+            <string value="/D_SCL_SECURE_NO_WARNINGS"/>
+            <string value="/D_ENABLE_EXTENDED_ALIGNED_STORAGE"/>
+            <string value="-Wall"/>
+            <string value="-Wextra"/>
+            <string value="-Wcast-qual"/>
+            <string value="-Wconversion"/>
+            <string value="-Wfloat-overflow-conversion"/>
+            <string value="-Wfloat-zero-conversion"/>
+            <string value="-Wfor-loop-analysis"/>
+            <string value="-Wformat-security"/>
+            <string value="-Wgnu-redeclared-enum"/>
+            <string value="-Winfinite-recursion"/>
+            <string value="-Winvalid-constexpr"/>
+            <string value="-Wliteral-conversion"/>
+            <string value="-Wmissing-declarations"/>
+            <string value="-Woverlength-strings"/>
+            <string value="-Wpointer-arith"/>
+            <string value="-Wself-assign"/>
+            <string value="-Wshadow-all"/>
+            <string value="-Wstring-conversion"/>
+            <string value="-Wtautological-overlap-compare"/>
+            <string value="-Wundef"/>
+            <string value="-Wuninitialized"/>
+            <string value="-Wunreachable-code"/>
+            <string value="-Wunused-comparison"/>
+            <string value="-Wunused-local-typedefs"/>
+            <string value="-Wunused-result"/>
+            <string value="-Wvla"/>
+            <string value="-Wwrite-strings"/>
+            <string value="-Wno-float-conversion"/>
+            <string value="-Wno-implicit-float-conversion"/>
+            <string value="-Wno-implicit-int-float-conversion"/>
+            <string value="-Wno-implicit-int-conversion"/>
+            <string value="-Wno-shorten-64-to-32"/>
+            <string value="-Wno-sign-conversion"/>
+            <string value="-Wno-unknown-warning-option"/>
+            <string value="-DNOMINMAX"/>
+            <string value="-Wall"/>
+            <string value="-Wextra"/>
+            <string value="-Wcast-qual"/>
+            <string value="-Wconversion-null"/>
+            <string value="-Wformat-security"/>
+            <string value="-Wmissing-declarations"/>
+            <string value="-Woverlength-strings"/>
+            <string value="-Wpointer-arith"/>
+            <string value="-Wundef"/>
+            <string value="-Wunused-local-typedefs"/>
+            <string value="-Wunused-result"/>
+            <string value="-Wvarargs"/>
+            <string value="-Wvla"/>
+            <string value="-Wwrite-strings"/>
+            <string value="-DNOMINMAX"/>
+        </list>
+        <rule-input name="@com_google_absl//absl:clang-cl_compiler"/>
+        <rule-input name="@com_google_absl//absl:clang_compiler"/>
+        <rule-input name="@com_google_absl//absl:msvc_compiler"/>
+        <rule-input name="@com_google_absl//absl/base:config.h"/>
+        <rule-input name="@com_google_absl//absl/base:options.h"/>
+        <rule-input name="@com_google_absl//absl/base:policy_checks.h"/>
+    </rule>
+    <source-file location="/private/var/tmp/_bazel_gwunleong/1cf6e3157016003ad3c69ac77713090f/external/com_google_absl/absl/base/config.h:1:1" name="@com_google_absl//absl/base:config.h">
+        <visibility-label name="//visibility:public"/>
+    </source-file>
+    <source-file location="/private/var/tmp/_bazel_gwunleong/1cf6e3157016003ad3c69ac77713090f/external/com_google_absl/absl/base/const_init.h:1:1" name="@com_google_absl//absl/base:const_init.h">
+        <visibility-label name="//visibility:public"/>
+    </source-file>
+    <rule class="cc_library" location="/private/var/tmp/_bazel_gwunleong/1cf6e3157016003ad3c69ac77713090f/external/com_google_absl/absl/base/BUILD.bazel:132:11" name="@com_google_absl//absl/base:core_headers">
+        <string name="name" value="core_headers"/>
+        <list name="srcs">
+            <label value="@com_google_absl//absl/base:internal/thread_annotations.h"/>
+        </list>
+        <list name="hdrs">
+            <label value="@com_google_absl//absl/base:attributes.h"/>
+            <label value="@com_google_absl//absl/base:const_init.h"/>
+            <label value="@com_google_absl//absl/base:macros.h"/>
+            <label value="@com_google_absl//absl/base:optimization.h"/>
+            <label value="@com_google_absl//absl/base:port.h"/>
+            <label value="@com_google_absl//absl/base:thread_annotations.h"/>
+        </list>
+        <list name="linkopts">
+            <string value="-ignore:4221"/>
+        </list>
+        <list name="copts">
+            <string value="/W3"/>
+            <string value="/DNOMINMAX"/>
+            <string value="/DWIN32_LEAN_AND_MEAN"/>
+            <string value="/D_CRT_SECURE_NO_WARNINGS"/>
+            <string value="/D_SCL_SECURE_NO_WARNINGS"/>
+            <string value="/D_ENABLE_EXTENDED_ALIGNED_STORAGE"/>
+            <string value="/bigobj"/>
+            <string value="/wd4005"/>
+            <string value="/wd4068"/>
+            <string value="/wd4180"/>
+            <string value="/wd4244"/>
+            <string value="/wd4267"/>
+            <string value="/wd4503"/>
+            <string value="/wd4800"/>
+            <string value="/W3"/>
+            <string value="/DNOMINMAX"/>
+            <string value="/DWIN32_LEAN_AND_MEAN"/>
+            <string value="/D_CRT_SECURE_NO_WARNINGS"/>
+            <string value="/D_SCL_SECURE_NO_WARNINGS"/>
+            <string value="/D_ENABLE_EXTENDED_ALIGNED_STORAGE"/>
+            <string value="-Wall"/>
+            <string value="-Wextra"/>
+            <string value="-Wcast-qual"/>
+            <string value="-Wconversion"/>
+            <string value="-Wfloat-overflow-conversion"/>
+            <string value="-Wfloat-zero-conversion"/>
+            <string value="-Wfor-loop-analysis"/>
+            <string value="-Wformat-security"/>
+            <string value="-Wgnu-redeclared-enum"/>
+            <string value="-Winfinite-recursion"/>
+            <string value="-Winvalid-constexpr"/>
+            <string value="-Wliteral-conversion"/>
+            <string value="-Wmissing-declarations"/>
+            <string value="-Woverlength-strings"/>
+            <string value="-Wpointer-arith"/>
+            <string value="-Wself-assign"/>
+            <string value="-Wshadow-all"/>
+            <string value="-Wstring-conversion"/>
+            <string value="-Wtautological-overlap-compare"/>
+            <string value="-Wundef"/>
+            <string value="-Wuninitialized"/>
+            <string value="-Wunreachable-code"/>
+            <string value="-Wunused-comparison"/>
+            <string value="-Wunused-local-typedefs"/>
+            <string value="-Wunused-result"/>
+            <string value="-Wvla"/>
+            <string value="-Wwrite-strings"/>
+            <string value="-Wno-float-conversion"/>
+            <string value="-Wno-implicit-float-conversion"/>
+            <string value="-Wno-implicit-int-float-conversion"/>
+            <string value="-Wno-implicit-int-conversion"/>
+            <string value="-Wno-shorten-64-to-32"/>
+            <string value="-Wno-sign-conversion"/>
+            <string value="-Wno-unknown-warning-option"/>
+            <string value="-DNOMINMAX"/>
+            <string value="-Wall"/>
+            <string value="-Wextra"/>
+            <string value="-Wcast-qual"/>
+            <string value="-Wconversion-null"/>
+            <string value="-Wformat-security"/>
+            <string value="-Wmissing-declarations"/>
+            <string value="-Woverlength-strings"/>
+            <string value="-Wpointer-arith"/>
+            <string value="-Wundef"/>
+            <string value="-Wunused-local-typedefs"/>
+            <string value="-Wunused-result"/>
+            <string value="-Wvarargs"/>
+            <string value="-Wvla"/>
+            <string value="-Wwrite-strings"/>
+            <string value="-DNOMINMAX"/>
+        </list>
+        <list name="deps">
+            <label value="@com_google_absl//absl/base:config"/>
+        </list>
+        <rule-input name="@com_google_absl//absl:clang-cl_compiler"/>
+        <rule-input name="@com_google_absl//absl:clang_compiler"/>
+        <rule-input name="@com_google_absl//absl:msvc_compiler"/>
+        <rule-input name="@com_google_absl//absl/base:attributes.h"/>
+        <rule-input name="@com_google_absl//absl/base:config"/>
+        <rule-input name="@com_google_absl//absl/base:const_init.h"/>
+        <rule-input name="@com_google_absl//absl/base:internal/thread_annotations.h"/>
+        <rule-input name="@com_google_absl//absl/base:macros.h"/>
+        <rule-input name="@com_google_absl//absl/base:optimization.h"/>
+        <rule-input name="@com_google_absl//absl/base:port.h"/>
+        <rule-input name="@com_google_absl//absl/base:thread_annotations.h"/>
+    </rule>
+    <rule class="cc_library" location="/private/var/tmp/_bazel_gwunleong/1cf6e3157016003ad3c69ac77713090f/external/com_google_absl/absl/base/BUILD.bazel:116:11" name="@com_google_absl//absl/base:dynamic_annotations">
+        <string name="name" value="dynamic_annotations"/>
+        <list name="srcs">
+            <label value="@com_google_absl//absl/base:internal/dynamic_annotations.h"/>
+        </list>
+        <list name="hdrs">
+            <label value="@com_google_absl//absl/base:dynamic_annotations.h"/>
+        </list>
+        <list name="linkopts">
+            <string value="-ignore:4221"/>
+        </list>
+        <list name="copts">
+            <string value="/W3"/>
+            <string value="/DNOMINMAX"/>
+            <string value="/DWIN32_LEAN_AND_MEAN"/>
+            <string value="/D_CRT_SECURE_NO_WARNINGS"/>
+            <string value="/D_SCL_SECURE_NO_WARNINGS"/>
+            <string value="/D_ENABLE_EXTENDED_ALIGNED_STORAGE"/>
+            <string value="/bigobj"/>
+            <string value="/wd4005"/>
+            <string value="/wd4068"/>
+            <string value="/wd4180"/>
+            <string value="/wd4244"/>
+            <string value="/wd4267"/>
+            <string value="/wd4503"/>
+            <string value="/wd4800"/>
+            <string value="/W3"/>
+            <string value="/DNOMINMAX"/>
+            <string value="/DWIN32_LEAN_AND_MEAN"/>
+            <string value="/D_CRT_SECURE_NO_WARNINGS"/>
+            <string value="/D_SCL_SECURE_NO_WARNINGS"/>
+            <string value="/D_ENABLE_EXTENDED_ALIGNED_STORAGE"/>
+            <string value="-Wall"/>
+            <string value="-Wextra"/>
+            <string value="-Wcast-qual"/>
+            <string value="-Wconversion"/>
+            <string value="-Wfloat-overflow-conversion"/>
+            <string value="-Wfloat-zero-conversion"/>
+            <string value="-Wfor-loop-analysis"/>
+            <string value="-Wformat-security"/>
+            <string value="-Wgnu-redeclared-enum"/>
+            <string value="-Winfinite-recursion"/>
+            <string value="-Winvalid-constexpr"/>
+            <string value="-Wliteral-conversion"/>
+            <string value="-Wmissing-declarations"/>
+            <string value="-Woverlength-strings"/>
+            <string value="-Wpointer-arith"/>
+            <string value="-Wself-assign"/>
+            <string value="-Wshadow-all"/>
+            <string value="-Wstring-conversion"/>
+            <string value="-Wtautological-overlap-compare"/>
+            <string value="-Wundef"/>
+            <string value="-Wuninitialized"/>
+            <string value="-Wunreachable-code"/>
+            <string value="-Wunused-comparison"/>
+            <string value="-Wunused-local-typedefs"/>
+            <string value="-Wunused-result"/>
+            <string value="-Wvla"/>
+            <string value="-Wwrite-strings"/>
+            <string value="-Wno-float-conversion"/>
+            <string value="-Wno-implicit-float-conversion"/>
+            <string value="-Wno-implicit-int-float-conversion"/>
+            <string value="-Wno-implicit-int-conversion"/>
+            <string value="-Wno-shorten-64-to-32"/>
+            <string value="-Wno-sign-conversion"/>
+            <string value="-Wno-unknown-warning-option"/>
+            <string value="-DNOMINMAX"/>
+            <string value="-Wall"/>
+            <string value="-Wextra"/>
+            <string value="-Wcast-qual"/>
+            <string value="-Wconversion-null"/>
+            <string value="-Wformat-security"/>
+            <string value="-Wmissing-declarations"/>
+            <string value="-Woverlength-strings"/>
+            <string value="-Wpointer-arith"/>
+            <string value="-Wundef"/>
+            <string value="-Wunused-local-typedefs"/>
+            <string value="-Wunused-result"/>
+            <string value="-Wvarargs"/>
+            <string value="-Wvla"/>
+            <string value="-Wwrite-strings"/>
+            <string value="-DNOMINMAX"/>
+        </list>
+        <list name="deps">
+            <label value="@com_google_absl//absl/base:config"/>
+            <label value="@com_google_absl//absl/base:core_headers"/>
+        </list>
+        <rule-input name="@com_google_absl//absl:clang-cl_compiler"/>
+        <rule-input name="@com_google_absl//absl:clang_compiler"/>
+        <rule-input name="@com_google_absl//absl:msvc_compiler"/>
+        <rule-input name="@com_google_absl//absl/base:config"/>
+        <rule-input name="@com_google_absl//absl/base:core_headers"/>
+        <rule-input name="@com_google_absl//absl/base:dynamic_annotations.h"/>
+        <rule-input name="@com_google_absl//absl/base:internal/dynamic_annotations.h"/>
+    </rule>
+    <source-file location="/private/var/tmp/_bazel_gwunleong/1cf6e3157016003ad3c69ac77713090f/external/com_google_absl/absl/base/dynamic_annotations.h:1:1" name="@com_google_absl//absl/base:dynamic_annotations.h">
+        <visibility-label name="//visibility:public"/>
+    </source-file>
+    <rule class="cc_library" location="/private/var/tmp/_bazel_gwunleong/1cf6e3157016003ad3c69ac77713090f/external/com_google_absl/absl/base/BUILD.bazel:482:11" name="@com_google_absl//absl/base:endian">
+        <string name="name" value="endian"/>
+        <list name="hdrs">
+            <label value="@com_google_absl//absl/base:internal/endian.h"/>
+            <label value="@com_google_absl//absl/base:internal/unaligned_access.h"/>
+        </list>
+        <list name="linkopts">
+            <string value="-ignore:4221"/>
+        </list>
+        <list name="copts">
+            <string value="/W3"/>
+            <string value="/DNOMINMAX"/>
+            <string value="/DWIN32_LEAN_AND_MEAN"/>
+            <string value="/D_CRT_SECURE_NO_WARNINGS"/>
+            <string value="/D_SCL_SECURE_NO_WARNINGS"/>
+            <string value="/D_ENABLE_EXTENDED_ALIGNED_STORAGE"/>
+            <string value="/bigobj"/>
+            <string value="/wd4005"/>
+            <string value="/wd4068"/>
+            <string value="/wd4180"/>
+            <string value="/wd4244"/>
+            <string value="/wd4267"/>
+            <string value="/wd4503"/>
+            <string value="/wd4800"/>
+            <string value="/W3"/>
+            <string value="/DNOMINMAX"/>
+            <string value="/DWIN32_LEAN_AND_MEAN"/>
+            <string value="/D_CRT_SECURE_NO_WARNINGS"/>
+            <string value="/D_SCL_SECURE_NO_WARNINGS"/>
+            <string value="/D_ENABLE_EXTENDED_ALIGNED_STORAGE"/>
+            <string value="-Wall"/>
+            <string value="-Wextra"/>
+            <string value="-Wcast-qual"/>
+            <string value="-Wconversion"/>
+            <string value="-Wfloat-overflow-conversion"/>
+            <string value="-Wfloat-zero-conversion"/>
+            <string value="-Wfor-loop-analysis"/>
+            <string value="-Wformat-security"/>
+            <string value="-Wgnu-redeclared-enum"/>
+            <string value="-Winfinite-recursion"/>
+            <string value="-Winvalid-constexpr"/>
+            <string value="-Wliteral-conversion"/>
+            <string value="-Wmissing-declarations"/>
+            <string value="-Woverlength-strings"/>
+            <string value="-Wpointer-arith"/>
+            <string value="-Wself-assign"/>
+            <string value="-Wshadow-all"/>
+            <string value="-Wstring-conversion"/>
+            <string value="-Wtautological-overlap-compare"/>
+            <string value="-Wundef"/>
+            <string value="-Wuninitialized"/>
+            <string value="-Wunreachable-code"/>
+            <string value="-Wunused-comparison"/>
+            <string value="-Wunused-local-typedefs"/>
+            <string value="-Wunused-result"/>
+            <string value="-Wvla"/>
+            <string value="-Wwrite-strings"/>
+            <string value="-Wno-float-conversion"/>
+            <string value="-Wno-implicit-float-conversion"/>
+            <string value="-Wno-implicit-int-float-conversion"/>
+            <string value="-Wno-implicit-int-conversion"/>
+            <string value="-Wno-shorten-64-to-32"/>
+            <string value="-Wno-sign-conversion"/>
+            <string value="-Wno-unknown-warning-option"/>
+            <string value="-DNOMINMAX"/>
+            <string value="-Wall"/>
+            <string value="-Wextra"/>
+            <string value="-Wcast-qual"/>
+            <string value="-Wconversion-null"/>
+            <string value="-Wformat-security"/>
+            <string value="-Wmissing-declarations"/>
+            <string value="-Woverlength-strings"/>
+            <string value="-Wpointer-arith"/>
+            <string value="-Wundef"/>
+            <string value="-Wunused-local-typedefs"/>
+            <string value="-Wunused-result"/>
+            <string value="-Wvarargs"/>
+            <string value="-Wvla"/>
+            <string value="-Wwrite-strings"/>
+            <string value="-DNOMINMAX"/>
+        </list>
+        <list name="deps">
+            <label value="@com_google_absl//absl/base:base"/>
+            <label value="@com_google_absl//absl/base:config"/>
+            <label value="@com_google_absl//absl/base:core_headers"/>
+        </list>
+        <rule-input name="@com_google_absl//absl:clang-cl_compiler"/>
+        <rule-input name="@com_google_absl//absl:clang_compiler"/>
+        <rule-input name="@com_google_absl//absl:msvc_compiler"/>
+        <rule-input name="@com_google_absl//absl/base:base"/>
+        <rule-input name="@com_google_absl//absl/base:config"/>
+        <rule-input name="@com_google_absl//absl/base:core_headers"/>
+        <rule-input name="@com_google_absl//absl/base:internal/endian.h"/>
+        <rule-input name="@com_google_absl//absl/base:internal/unaligned_access.h"/>
+    </rule>
+    <rule class="cc_library" location="/private/var/tmp/_bazel_gwunleong/1cf6e3157016003ad3c69ac77713090f/external/com_google_absl/absl/base/BUILD.bazel:42:11" name="@com_google_absl//absl/base:errno_saver">
+        <string name="name" value="errno_saver"/>
+        <list name="visibility">
+            <label value="@com_google_absl//absl:__subpackages__"/>
+        </list>
+        <list name="hdrs">
+            <label value="@com_google_absl//absl/base:internal/errno_saver.h"/>
+        </list>
+        <list name="linkopts">
+            <string value="-ignore:4221"/>
+        </list>
+        <list name="copts">
+            <string value="/W3"/>
+            <string value="/DNOMINMAX"/>
+            <string value="/DWIN32_LEAN_AND_MEAN"/>
+            <string value="/D_CRT_SECURE_NO_WARNINGS"/>
+            <string value="/D_SCL_SECURE_NO_WARNINGS"/>
+            <string value="/D_ENABLE_EXTENDED_ALIGNED_STORAGE"/>
+            <string value="/bigobj"/>
+            <string value="/wd4005"/>
+            <string value="/wd4068"/>
+            <string value="/wd4180"/>
+            <string value="/wd4244"/>
+            <string value="/wd4267"/>
+            <string value="/wd4503"/>
+            <string value="/wd4800"/>
+            <string value="/W3"/>
+            <string value="/DNOMINMAX"/>
+            <string value="/DWIN32_LEAN_AND_MEAN"/>
+            <string value="/D_CRT_SECURE_NO_WARNINGS"/>
+            <string value="/D_SCL_SECURE_NO_WARNINGS"/>
+            <string value="/D_ENABLE_EXTENDED_ALIGNED_STORAGE"/>
+            <string value="-Wall"/>
+            <string value="-Wextra"/>
+            <string value="-Wcast-qual"/>
+            <string value="-Wconversion"/>
+            <string value="-Wfloat-overflow-conversion"/>
+            <string value="-Wfloat-zero-conversion"/>
+            <string value="-Wfor-loop-analysis"/>
+            <string value="-Wformat-security"/>
+            <string value="-Wgnu-redeclared-enum"/>
+            <string value="-Winfinite-recursion"/>
+            <string value="-Winvalid-constexpr"/>
+            <string value="-Wliteral-conversion"/>
+            <string value="-Wmissing-declarations"/>
+            <string value="-Woverlength-strings"/>
+            <string value="-Wpointer-arith"/>
+            <string value="-Wself-assign"/>
+            <string value="-Wshadow-all"/>
+            <string value="-Wstring-conversion"/>
+            <string value="-Wtautological-overlap-compare"/>
+            <string value="-Wundef"/>
+            <string value="-Wuninitialized"/>
+            <string value="-Wunreachable-code"/>
+            <string value="-Wunused-comparison"/>
+            <string value="-Wunused-local-typedefs"/>
+            <string value="-Wunused-result"/>
+            <string value="-Wvla"/>
+            <string value="-Wwrite-strings"/>
+            <string value="-Wno-float-conversion"/>
+            <string value="-Wno-implicit-float-conversion"/>
+            <string value="-Wno-implicit-int-float-conversion"/>
+            <string value="-Wno-implicit-int-conversion"/>
+            <string value="-Wno-shorten-64-to-32"/>
+            <string value="-Wno-sign-conversion"/>
+            <string value="-Wno-unknown-warning-option"/>
+            <string value="-DNOMINMAX"/>
+            <string value="-Wall"/>
+            <string value="-Wextra"/>
+            <string value="-Wcast-qual"/>
+            <string value="-Wconversion-null"/>
+            <string value="-Wformat-security"/>
+            <string value="-Wmissing-declarations"/>
+            <string value="-Woverlength-strings"/>
+            <string value="-Wpointer-arith"/>
+            <string value="-Wundef"/>
+            <string value="-Wunused-local-typedefs"/>
+            <string value="-Wunused-result"/>
+            <string value="-Wvarargs"/>
+            <string value="-Wvla"/>
+            <string value="-Wwrite-strings"/>
+            <string value="-DNOMINMAX"/>
+        </list>
+        <list name="deps">
+            <label value="@com_google_absl//absl/base:config"/>
+        </list>
+        <rule-input name="@com_google_absl//absl:clang-cl_compiler"/>
+        <rule-input name="@com_google_absl//absl:clang_compiler"/>
+        <rule-input name="@com_google_absl//absl:msvc_compiler"/>
+        <rule-input name="@com_google_absl//absl/base:config"/>
+        <rule-input name="@com_google_absl//absl/base:internal/errno_saver.h"/>
+    </rule>
+    <source-file location="/private/var/tmp/_bazel_gwunleong/1cf6e3157016003ad3c69ac77713090f/external/com_google_absl/absl/base/internal/atomic_hook.h:1:1" name="@com_google_absl//absl/base:internal/atomic_hook.h">
+        <visibility-label name="//visibility:public"/>
+    </source-file>
+    <source-file location="/private/var/tmp/_bazel_gwunleong/1cf6e3157016003ad3c69ac77713090f/external/com_google_absl/absl/base/internal/cycleclock.cc:1:1" name="@com_google_absl//absl/base:internal/cycleclock.cc">
+        <visibility-label name="//visibility:public"/>
+    </source-file>
+    <source-file location="/private/var/tmp/_bazel_gwunleong/1cf6e3157016003ad3c69ac77713090f/external/com_google_absl/absl/base/internal/cycleclock.h:1:1" name="@com_google_absl//absl/base:internal/cycleclock.h">
+        <visibility-label name="//visibility:public"/>
+    </source-file>
+    <source-file location="/private/var/tmp/_bazel_gwunleong/1cf6e3157016003ad3c69ac77713090f/external/com_google_absl/absl/base/internal/dynamic_annotations.h:1:1" name="@com_google_absl//absl/base:internal/dynamic_annotations.h">
+        <visibility-label name="//visibility:public"/>
+    </source-file>
+    <source-file location="/private/var/tmp/_bazel_gwunleong/1cf6e3157016003ad3c69ac77713090f/external/com_google_absl/absl/base/internal/endian.h:1:1" name="@com_google_absl//absl/base:internal/endian.h">
+        <visibility-label name="//visibility:public"/>
+    </source-file>
+    <source-file location="/private/var/tmp/_bazel_gwunleong/1cf6e3157016003ad3c69ac77713090f/external/com_google_absl/absl/base/internal/errno_saver.h:1:1" name="@com_google_absl//absl/base:internal/errno_saver.h">
+        <visibility-label name="//visibility:public"/>
+    </source-file>
+    <source-file location="/private/var/tmp/_bazel_gwunleong/1cf6e3157016003ad3c69ac77713090f/external/com_google_absl/absl/base/internal/hide_ptr.h:1:1" name="@com_google_absl//absl/base:internal/hide_ptr.h">
+        <visibility-label name="//visibility:public"/>
+    </source-file>
+    <source-file location="/private/var/tmp/_bazel_gwunleong/1cf6e3157016003ad3c69ac77713090f/external/com_google_absl/absl/base/internal/identity.h:1:1" name="@com_google_absl//absl/base:internal/identity.h">
+        <visibility-label name="//visibility:public"/>
+    </source-file>
+    <source-file location="/private/var/tmp/_bazel_gwunleong/1cf6e3157016003ad3c69ac77713090f/external/com_google_absl/absl/base/internal/inline_variable.h:1:1" name="@com_google_absl//absl/base:internal/inline_variable.h">
+        <visibility-label name="//visibility:public"/>
+    </source-file>
+    <source-file location="/private/var/tmp/_bazel_gwunleong/1cf6e3157016003ad3c69ac77713090f/external/com_google_absl/absl/base/internal/invoke.h:1:1" name="@com_google_absl//absl/base:internal/invoke.h">
+        <visibility-label name="//visibility:public"/>
+    </source-file>
+    <source-file location="/private/var/tmp/_bazel_gwunleong/1cf6e3157016003ad3c69ac77713090f/external/com_google_absl/absl/base/internal/low_level_scheduling.h:1:1" name="@com_google_absl//absl/base:internal/low_level_scheduling.h">
+        <visibility-label name="//visibility:public"/>
+    </source-file>
+    <source-file location="/private/var/tmp/_bazel_gwunleong/1cf6e3157016003ad3c69ac77713090f/external/com_google_absl/absl/base/internal/per_thread_tls.h:1:1" name="@com_google_absl//absl/base:internal/per_thread_tls.h">
+        <visibility-label name="//visibility:public"/>
+    </source-file>
+    <source-file location="/private/var/tmp/_bazel_gwunleong/1cf6e3157016003ad3c69ac77713090f/external/com_google_absl/absl/base/internal/raw_logging.cc:1:1" name="@com_google_absl//absl/base:internal/raw_logging.cc">
+        <visibility-label name="//visibility:public"/>
+    </source-file>
+    <source-file location="/private/var/tmp/_bazel_gwunleong/1cf6e3157016003ad3c69ac77713090f/external/com_google_absl/absl/base/internal/raw_logging.h:1:1" name="@com_google_absl//absl/base:internal/raw_logging.h">
+        <visibility-label name="//visibility:public"/>
+    </source-file>
+    <source-file location="/private/var/tmp/_bazel_gwunleong/1cf6e3157016003ad3c69ac77713090f/external/com_google_absl/absl/base/internal/scheduling_mode.h:1:1" name="@com_google_absl//absl/base:internal/scheduling_mode.h">
+        <visibility-label name="//visibility:public"/>
+    </source-file>
+    <source-file location="/private/var/tmp/_bazel_gwunleong/1cf6e3157016003ad3c69ac77713090f/external/com_google_absl/absl/base/internal/spinlock.cc:1:1" name="@com_google_absl//absl/base:internal/spinlock.cc">
+        <visibility-label name="//visibility:public"/>
+    </source-file>
+    <source-file location="/private/var/tmp/_bazel_gwunleong/1cf6e3157016003ad3c69ac77713090f/external/com_google_absl/absl/base/internal/spinlock.h:1:1" name="@com_google_absl//absl/base:internal/spinlock.h">
+        <visibility-label name="//visibility:public"/>
+    </source-file>
+    <source-file location="/private/var/tmp/_bazel_gwunleong/1cf6e3157016003ad3c69ac77713090f/external/com_google_absl/absl/base/internal/spinlock_akaros.inc:1:1" name="@com_google_absl//absl/base:internal/spinlock_akaros.inc">
+        <visibility-label name="//visibility:public"/>
+    </source-file>
+    <source-file location="/private/var/tmp/_bazel_gwunleong/1cf6e3157016003ad3c69ac77713090f/external/com_google_absl/absl/base/internal/spinlock_linux.inc:1:1" name="@com_google_absl//absl/base:internal/spinlock_linux.inc">
+        <visibility-label name="//visibility:public"/>
+    </source-file>
+    <source-file location="/private/var/tmp/_bazel_gwunleong/1cf6e3157016003ad3c69ac77713090f/external/com_google_absl/absl/base/internal/spinlock_posix.inc:1:1" name="@com_google_absl//absl/base:internal/spinlock_posix.inc">
+        <visibility-label name="//visibility:public"/>
+    </source-file>
+    <source-file location="/private/var/tmp/_bazel_gwunleong/1cf6e3157016003ad3c69ac77713090f/external/com_google_absl/absl/base/internal/spinlock_wait.cc:1:1" name="@com_google_absl//absl/base:internal/spinlock_wait.cc">
+        <visibility-label name="//visibility:public"/>
+    </source-file>
+    <source-file location="/private/var/tmp/_bazel_gwunleong/1cf6e3157016003ad3c69ac77713090f/external/com_google_absl/absl/base/internal/spinlock_wait.h:1:1" name="@com_google_absl//absl/base:internal/spinlock_wait.h">
+        <visibility-label name="//visibility:public"/>
+    </source-file>
+    <source-file location="/private/var/tmp/_bazel_gwunleong/1cf6e3157016003ad3c69ac77713090f/external/com_google_absl/absl/base/internal/spinlock_win32.inc:1:1" name="@com_google_absl//absl/base:internal/spinlock_win32.inc">
+        <visibility-label name="//visibility:public"/>
+    </source-file>
+    <source-file location="/private/var/tmp/_bazel_gwunleong/1cf6e3157016003ad3c69ac77713090f/external/com_google_absl/absl/base/internal/sysinfo.cc:1:1" name="@com_google_absl//absl/base:internal/sysinfo.cc">
+        <visibility-label name="//visibility:public"/>
+    </source-file>
+    <source-file location="/private/var/tmp/_bazel_gwunleong/1cf6e3157016003ad3c69ac77713090f/external/com_google_absl/absl/base/internal/sysinfo.h:1:1" name="@com_google_absl//absl/base:internal/sysinfo.h">
+        <visibility-label name="//visibility:public"/>
+    </source-file>
+    <source-file location="/private/var/tmp/_bazel_gwunleong/1cf6e3157016003ad3c69ac77713090f/external/com_google_absl/absl/base/internal/thread_annotations.h:1:1" name="@com_google_absl//absl/base:internal/thread_annotations.h">
+        <visibility-label name="//visibility:public"/>
+    </source-file>
+    <source-file location="/private/var/tmp/_bazel_gwunleong/1cf6e3157016003ad3c69ac77713090f/external/com_google_absl/absl/base/internal/thread_identity.cc:1:1" name="@com_google_absl//absl/base:internal/thread_identity.cc">
+        <visibility-label name="//visibility:public"/>
+    </source-file>
+    <source-file location="/private/var/tmp/_bazel_gwunleong/1cf6e3157016003ad3c69ac77713090f/external/com_google_absl/absl/base/internal/thread_identity.h:1:1" name="@com_google_absl//absl/base:internal/thread_identity.h">
+        <visibility-label name="//visibility:public"/>
+    </source-file>
+    <source-file location="/private/var/tmp/_bazel_gwunleong/1cf6e3157016003ad3c69ac77713090f/external/com_google_absl/absl/base/internal/throw_delegate.cc:1:1" name="@com_google_absl//absl/base:internal/throw_delegate.cc">
+        <visibility-label name="//visibility:public"/>
+    </source-file>
+    <source-file location="/private/var/tmp/_bazel_gwunleong/1cf6e3157016003ad3c69ac77713090f/external/com_google_absl/absl/base/internal/throw_delegate.h:1:1" name="@com_google_absl//absl/base:internal/throw_delegate.h">
+        <visibility-label name="//visibility:public"/>
+    </source-file>
+    <source-file location="/private/var/tmp/_bazel_gwunleong/1cf6e3157016003ad3c69ac77713090f/external/com_google_absl/absl/base/internal/tsan_mutex_interface.h:1:1" name="@com_google_absl//absl/base:internal/tsan_mutex_interface.h">
+        <visibility-label name="//visibility:public"/>
+    </source-file>
+    <source-file location="/private/var/tmp/_bazel_gwunleong/1cf6e3157016003ad3c69ac77713090f/external/com_google_absl/absl/base/internal/unaligned_access.h:1:1" name="@com_google_absl//absl/base:internal/unaligned_access.h">
+        <visibility-label name="//visibility:public"/>
+    </source-file>
+    <source-file location="/private/var/tmp/_bazel_gwunleong/1cf6e3157016003ad3c69ac77713090f/external/com_google_absl/absl/base/internal/unscaledcycleclock.cc:1:1" name="@com_google_absl//absl/base:internal/unscaledcycleclock.cc">
+        <visibility-label name="//visibility:public"/>
+    </source-file>
+    <source-file location="/private/var/tmp/_bazel_gwunleong/1cf6e3157016003ad3c69ac77713090f/external/com_google_absl/absl/base/internal/unscaledcycleclock.h:1:1" name="@com_google_absl//absl/base:internal/unscaledcycleclock.h">
+        <visibility-label name="//visibility:public"/>
+    </source-file>
+    <rule class="cc_library" location="/private/var/tmp/_bazel_gwunleong/1cf6e3157016003ad3c69ac77713090f/external/com_google_absl/absl/base/BUILD.bazel:53:11" name="@com_google_absl//absl/base:log_severity">
+        <string name="name" value="log_severity"/>
+        <list name="srcs">
+            <label value="@com_google_absl//absl/base:log_severity.cc"/>
+        </list>
+        <list name="hdrs">
+            <label value="@com_google_absl//absl/base:log_severity.h"/>
+        </list>
+        <list name="linkopts">
+            <string value="-ignore:4221"/>
+        </list>
+        <list name="copts">
+            <string value="/W3"/>
+            <string value="/DNOMINMAX"/>
+            <string value="/DWIN32_LEAN_AND_MEAN"/>
+            <string value="/D_CRT_SECURE_NO_WARNINGS"/>
+            <string value="/D_SCL_SECURE_NO_WARNINGS"/>
+            <string value="/D_ENABLE_EXTENDED_ALIGNED_STORAGE"/>
+            <string value="/bigobj"/>
+            <string value="/wd4005"/>
+            <string value="/wd4068"/>
+            <string value="/wd4180"/>
+            <string value="/wd4244"/>
+            <string value="/wd4267"/>
+            <string value="/wd4503"/>
+            <string value="/wd4800"/>
+            <string value="/W3"/>
+            <string value="/DNOMINMAX"/>
+            <string value="/DWIN32_LEAN_AND_MEAN"/>
+            <string value="/D_CRT_SECURE_NO_WARNINGS"/>
+            <string value="/D_SCL_SECURE_NO_WARNINGS"/>
+            <string value="/D_ENABLE_EXTENDED_ALIGNED_STORAGE"/>
+            <string value="-Wall"/>
+            <string value="-Wextra"/>
+            <string value="-Wcast-qual"/>
+            <string value="-Wconversion"/>
+            <string value="-Wfloat-overflow-conversion"/>
+            <string value="-Wfloat-zero-conversion"/>
+            <string value="-Wfor-loop-analysis"/>
+            <string value="-Wformat-security"/>
+            <string value="-Wgnu-redeclared-enum"/>
+            <string value="-Winfinite-recursion"/>
+            <string value="-Winvalid-constexpr"/>
+            <string value="-Wliteral-conversion"/>
+            <string value="-Wmissing-declarations"/>
+            <string value="-Woverlength-strings"/>
+            <string value="-Wpointer-arith"/>
+            <string value="-Wself-assign"/>
+            <string value="-Wshadow-all"/>
+            <string value="-Wstring-conversion"/>
+            <string value="-Wtautological-overlap-compare"/>
+            <string value="-Wundef"/>
+            <string value="-Wuninitialized"/>
+            <string value="-Wunreachable-code"/>
+            <string value="-Wunused-comparison"/>
+            <string value="-Wunused-local-typedefs"/>
+            <string value="-Wunused-result"/>
+            <string value="-Wvla"/>
+            <string value="-Wwrite-strings"/>
+            <string value="-Wno-float-conversion"/>
+            <string value="-Wno-implicit-float-conversion"/>
+            <string value="-Wno-implicit-int-float-conversion"/>
+            <string value="-Wno-implicit-int-conversion"/>
+            <string value="-Wno-shorten-64-to-32"/>
+            <string value="-Wno-sign-conversion"/>
+            <string value="-Wno-unknown-warning-option"/>
+            <string value="-DNOMINMAX"/>
+            <string value="-Wall"/>
+            <string value="-Wextra"/>
+            <string value="-Wcast-qual"/>
+            <string value="-Wconversion-null"/>
+            <string value="-Wformat-security"/>
+            <string value="-Wmissing-declarations"/>
+            <string value="-Woverlength-strings"/>
+            <string value="-Wpointer-arith"/>
+            <string value="-Wundef"/>
+            <string value="-Wunused-local-typedefs"/>
+            <string value="-Wunused-result"/>
+            <string value="-Wvarargs"/>
+            <string value="-Wvla"/>
+            <string value="-Wwrite-strings"/>
+            <string value="-DNOMINMAX"/>
+        </list>
+        <list name="deps">
+            <label value="@com_google_absl//absl/base:config"/>
+            <label value="@com_google_absl//absl/base:core_headers"/>
+        </list>
+        <rule-input name="@com_google_absl//absl:clang-cl_compiler"/>
+        <rule-input name="@com_google_absl//absl:clang_compiler"/>
+        <rule-input name="@com_google_absl//absl:msvc_compiler"/>
+        <rule-input name="@com_google_absl//absl/base:config"/>
+        <rule-input name="@com_google_absl//absl/base:core_headers"/>
+        <rule-input name="@com_google_absl//absl/base:log_severity.cc"/>
+        <rule-input name="@com_google_absl//absl/base:log_severity.h"/>
+    </rule>
+    <source-file location="/private/var/tmp/_bazel_gwunleong/1cf6e3157016003ad3c69ac77713090f/external/com_google_absl/absl/base/log_severity.cc:1:1" name="@com_google_absl//absl/base:log_severity.cc">
+        <visibility-label name="//visibility:public"/>
+    </source-file>
+    <source-file location="/private/var/tmp/_bazel_gwunleong/1cf6e3157016003ad3c69ac77713090f/external/com_google_absl/absl/base/log_severity.h:1:1" name="@com_google_absl//absl/base:log_severity.h">
+        <visibility-label name="//visibility:public"/>
+    </source-file>
+    <source-file location="/private/var/tmp/_bazel_gwunleong/1cf6e3157016003ad3c69ac77713090f/external/com_google_absl/absl/base/macros.h:1:1" name="@com_google_absl//absl/base:macros.h">
+        <visibility-label name="//visibility:public"/>
+    </source-file>
+    <source-file location="/private/var/tmp/_bazel_gwunleong/1cf6e3157016003ad3c69ac77713090f/external/com_google_absl/absl/base/optimization.h:1:1" name="@com_google_absl//absl/base:optimization.h">
+        <visibility-label name="//visibility:public"/>
+    </source-file>
+    <source-file location="/private/var/tmp/_bazel_gwunleong/1cf6e3157016003ad3c69ac77713090f/external/com_google_absl/absl/base/options.h:1:1" name="@com_google_absl//absl/base:options.h">
+        <visibility-label name="//visibility:public"/>
+    </source-file>
+    <source-file location="/private/var/tmp/_bazel_gwunleong/1cf6e3157016003ad3c69ac77713090f/external/com_google_absl/absl/base/policy_checks.h:1:1" name="@com_google_absl//absl/base:policy_checks.h">
+        <visibility-label name="//visibility:public"/>
+    </source-file>
+    <source-file location="/private/var/tmp/_bazel_gwunleong/1cf6e3157016003ad3c69ac77713090f/external/com_google_absl/absl/base/port.h:1:1" name="@com_google_absl//absl/base:port.h">
+        <visibility-label name="//visibility:public"/>
+    </source-file>
+    <rule class="cc_library" location="/private/var/tmp/_bazel_gwunleong/1cf6e3157016003ad3c69ac77713090f/external/com_google_absl/absl/base/BUILD.bazel:65:11" name="@com_google_absl//absl/base:raw_logging_internal">
+        <string name="name" value="raw_logging_internal"/>
+        <list name="visibility">
+            <label value="@com_google_absl//absl:__subpackages__"/>
+        </list>
+        <list name="srcs">
+            <label value="@com_google_absl//absl/base:internal/raw_logging.cc"/>
+        </list>
+        <list name="hdrs">
+            <label value="@com_google_absl//absl/base:internal/raw_logging.h"/>
+        </list>
+        <list name="linkopts">
+            <string value="-ignore:4221"/>
+        </list>
+        <list name="copts">
+            <string value="/W3"/>
+            <string value="/DNOMINMAX"/>
+            <string value="/DWIN32_LEAN_AND_MEAN"/>
+            <string value="/D_CRT_SECURE_NO_WARNINGS"/>
+            <string value="/D_SCL_SECURE_NO_WARNINGS"/>
+            <string value="/D_ENABLE_EXTENDED_ALIGNED_STORAGE"/>
+            <string value="/bigobj"/>
+            <string value="/wd4005"/>
+            <string value="/wd4068"/>
+            <string value="/wd4180"/>
+            <string value="/wd4244"/>
+            <string value="/wd4267"/>
+            <string value="/wd4503"/>
+            <string value="/wd4800"/>
+            <string value="/W3"/>
+            <string value="/DNOMINMAX"/>
+            <string value="/DWIN32_LEAN_AND_MEAN"/>
+            <string value="/D_CRT_SECURE_NO_WARNINGS"/>
+            <string value="/D_SCL_SECURE_NO_WARNINGS"/>
+            <string value="/D_ENABLE_EXTENDED_ALIGNED_STORAGE"/>
+            <string value="-Wall"/>
+            <string value="-Wextra"/>
+            <string value="-Wcast-qual"/>
+            <string value="-Wconversion"/>
+            <string value="-Wfloat-overflow-conversion"/>
+            <string value="-Wfloat-zero-conversion"/>
+            <string value="-Wfor-loop-analysis"/>
+            <string value="-Wformat-security"/>
+            <string value="-Wgnu-redeclared-enum"/>
+            <string value="-Winfinite-recursion"/>
+            <string value="-Winvalid-constexpr"/>
+            <string value="-Wliteral-conversion"/>
+            <string value="-Wmissing-declarations"/>
+            <string value="-Woverlength-strings"/>
+            <string value="-Wpointer-arith"/>
+            <string value="-Wself-assign"/>
+            <string value="-Wshadow-all"/>
+            <string value="-Wstring-conversion"/>
+            <string value="-Wtautological-overlap-compare"/>
+            <string value="-Wundef"/>
+            <string value="-Wuninitialized"/>
+            <string value="-Wunreachable-code"/>
+            <string value="-Wunused-comparison"/>
+            <string value="-Wunused-local-typedefs"/>
+            <string value="-Wunused-result"/>
+            <string value="-Wvla"/>
+            <string value="-Wwrite-strings"/>
+            <string value="-Wno-float-conversion"/>
+            <string value="-Wno-implicit-float-conversion"/>
+            <string value="-Wno-implicit-int-float-conversion"/>
+            <string value="-Wno-implicit-int-conversion"/>
+            <string value="-Wno-shorten-64-to-32"/>
+            <string value="-Wno-sign-conversion"/>
+            <string value="-Wno-unknown-warning-option"/>
+            <string value="-DNOMINMAX"/>
+            <string value="-Wall"/>
+            <string value="-Wextra"/>
+            <string value="-Wcast-qual"/>
+            <string value="-Wconversion-null"/>
+            <string value="-Wformat-security"/>
+            <string value="-Wmissing-declarations"/>
+            <string value="-Woverlength-strings"/>
+            <string value="-Wpointer-arith"/>
+            <string value="-Wundef"/>
+            <string value="-Wunused-local-typedefs"/>
+            <string value="-Wunused-result"/>
+            <string value="-Wvarargs"/>
+            <string value="-Wvla"/>
+            <string value="-Wwrite-strings"/>
+            <string value="-DNOMINMAX"/>
+        </list>
+        <list name="deps">
+            <label value="@com_google_absl//absl/base:atomic_hook"/>
+            <label value="@com_google_absl//absl/base:config"/>
+            <label value="@com_google_absl//absl/base:core_headers"/>
+            <label value="@com_google_absl//absl/base:errno_saver"/>
+            <label value="@com_google_absl//absl/base:log_severity"/>
+        </list>
+        <rule-input name="@com_google_absl//absl:clang-cl_compiler"/>
+        <rule-input name="@com_google_absl//absl:clang_compiler"/>
+        <rule-input name="@com_google_absl//absl:msvc_compiler"/>
+        <rule-input name="@com_google_absl//absl/base:atomic_hook"/>
+        <rule-input name="@com_google_absl//absl/base:config"/>
+        <rule-input name="@com_google_absl//absl/base:core_headers"/>
+        <rule-input name="@com_google_absl//absl/base:errno_saver"/>
+        <rule-input name="@com_google_absl//absl/base:internal/raw_logging.cc"/>
+        <rule-input name="@com_google_absl//absl/base:internal/raw_logging.h"/>
+        <rule-input name="@com_google_absl//absl/base:log_severity"/>
+    </rule>
+    <rule class="cc_library" location="/private/var/tmp/_bazel_gwunleong/1cf6e3157016003ad3c69ac77713090f/external/com_google_absl/absl/base/BUILD.bazel:83:11" name="@com_google_absl//absl/base:spinlock_wait">
+        <string name="name" value="spinlock_wait"/>
+        <list name="visibility">
+            <label value="@com_google_absl//absl/base:__pkg__"/>
+        </list>
+        <list name="srcs">
+            <label value="@com_google_absl//absl/base:internal/spinlock_akaros.inc"/>
+            <label value="@com_google_absl//absl/base:internal/spinlock_linux.inc"/>
+            <label value="@com_google_absl//absl/base:internal/spinlock_posix.inc"/>
+            <label value="@com_google_absl//absl/base:internal/spinlock_wait.cc"/>
+            <label value="@com_google_absl//absl/base:internal/spinlock_win32.inc"/>
+        </list>
+        <list name="hdrs">
+            <label value="@com_google_absl//absl/base:internal/spinlock_wait.h"/>
+        </list>
+        <list name="linkopts">
+            <string value="-ignore:4221"/>
+        </list>
+        <list name="copts">
+            <string value="/W3"/>
+            <string value="/DNOMINMAX"/>
+            <string value="/DWIN32_LEAN_AND_MEAN"/>
+            <string value="/D_CRT_SECURE_NO_WARNINGS"/>
+            <string value="/D_SCL_SECURE_NO_WARNINGS"/>
+            <string value="/D_ENABLE_EXTENDED_ALIGNED_STORAGE"/>
+            <string value="/bigobj"/>
+            <string value="/wd4005"/>
+            <string value="/wd4068"/>
+            <string value="/wd4180"/>
+            <string value="/wd4244"/>
+            <string value="/wd4267"/>
+            <string value="/wd4503"/>
+            <string value="/wd4800"/>
+            <string value="/W3"/>
+            <string value="/DNOMINMAX"/>
+            <string value="/DWIN32_LEAN_AND_MEAN"/>
+            <string value="/D_CRT_SECURE_NO_WARNINGS"/>
+            <string value="/D_SCL_SECURE_NO_WARNINGS"/>
+            <string value="/D_ENABLE_EXTENDED_ALIGNED_STORAGE"/>
+            <string value="-Wall"/>
+            <string value="-Wextra"/>
+            <string value="-Wcast-qual"/>
+            <string value="-Wconversion"/>
+            <string value="-Wfloat-overflow-conversion"/>
+            <string value="-Wfloat-zero-conversion"/>
+            <string value="-Wfor-loop-analysis"/>
+            <string value="-Wformat-security"/>
+            <string value="-Wgnu-redeclared-enum"/>
+            <string value="-Winfinite-recursion"/>
+            <string value="-Winvalid-constexpr"/>
+            <string value="-Wliteral-conversion"/>
+            <string value="-Wmissing-declarations"/>
+            <string value="-Woverlength-strings"/>
+            <string value="-Wpointer-arith"/>
+            <string value="-Wself-assign"/>
+            <string value="-Wshadow-all"/>
+            <string value="-Wstring-conversion"/>
+            <string value="-Wtautological-overlap-compare"/>
+            <string value="-Wundef"/>
+            <string value="-Wuninitialized"/>
+            <string value="-Wunreachable-code"/>
+            <string value="-Wunused-comparison"/>
+            <string value="-Wunused-local-typedefs"/>
+            <string value="-Wunused-result"/>
+            <string value="-Wvla"/>
+            <string value="-Wwrite-strings"/>
+            <string value="-Wno-float-conversion"/>
+            <string value="-Wno-implicit-float-conversion"/>
+            <string value="-Wno-implicit-int-float-conversion"/>
+            <string value="-Wno-implicit-int-conversion"/>
+            <string value="-Wno-shorten-64-to-32"/>
+            <string value="-Wno-sign-conversion"/>
+            <string value="-Wno-unknown-warning-option"/>
+            <string value="-DNOMINMAX"/>
+            <string value="-Wall"/>
+            <string value="-Wextra"/>
+            <string value="-Wcast-qual"/>
+            <string value="-Wconversion-null"/>
+            <string value="-Wformat-security"/>
+            <string value="-Wmissing-declarations"/>
+            <string value="-Woverlength-strings"/>
+            <string value="-Wpointer-arith"/>
+            <string value="-Wundef"/>
+            <string value="-Wunused-local-typedefs"/>
+            <string value="-Wunused-result"/>
+            <string value="-Wvarargs"/>
+            <string value="-Wvla"/>
+            <string value="-Wwrite-strings"/>
+            <string value="-DNOMINMAX"/>
+        </list>
+        <list name="deps">
+            <label value="@com_google_absl//absl/base:base_internal"/>
+            <label value="@com_google_absl//absl/base:core_headers"/>
+            <label value="@com_google_absl//absl/base:errno_saver"/>
+        </list>
+        <rule-input name="@com_google_absl//absl:clang-cl_compiler"/>
+        <rule-input name="@com_google_absl//absl:clang_compiler"/>
+        <rule-input name="@com_google_absl//absl:msvc_compiler"/>
+        <rule-input name="@com_google_absl//absl/base:base_internal"/>
+        <rule-input name="@com_google_absl//absl/base:core_headers"/>
+        <rule-input name="@com_google_absl//absl/base:errno_saver"/>
+        <rule-input name="@com_google_absl//absl/base:internal/spinlock_akaros.inc"/>
+        <rule-input name="@com_google_absl//absl/base:internal/spinlock_linux.inc"/>
+        <rule-input name="@com_google_absl//absl/base:internal/spinlock_posix.inc"/>
+        <rule-input name="@com_google_absl//absl/base:internal/spinlock_wait.cc"/>
+        <rule-input name="@com_google_absl//absl/base:internal/spinlock_wait.h"/>
+        <rule-input name="@com_google_absl//absl/base:internal/spinlock_win32.inc"/>
+    </rule>
+    <source-file location="/private/var/tmp/_bazel_gwunleong/1cf6e3157016003ad3c69ac77713090f/external/com_google_absl/absl/base/thread_annotations.h:1:1" name="@com_google_absl//absl/base:thread_annotations.h">
+        <visibility-label name="//visibility:public"/>
+    </source-file>
+    <rule class="cc_library" location="/private/var/tmp/_bazel_gwunleong/1cf6e3157016003ad3c69ac77713090f/external/com_google_absl/absl/base/BUILD.bazel:290:11" name="@com_google_absl//absl/base:throw_delegate">
+        <string name="name" value="throw_delegate"/>
+        <list name="visibility">
+            <label value="@com_google_absl//absl:__subpackages__"/>
+        </list>
+        <list name="srcs">
+            <label value="@com_google_absl//absl/base:internal/throw_delegate.cc"/>
+        </list>
+        <list name="hdrs">
+            <label value="@com_google_absl//absl/base:internal/throw_delegate.h"/>
+        </list>
+        <list name="linkopts">
+            <string value="-ignore:4221"/>
+        </list>
+        <list name="copts">
+            <string value="/W3"/>
+            <string value="/DNOMINMAX"/>
+            <string value="/DWIN32_LEAN_AND_MEAN"/>
+            <string value="/D_CRT_SECURE_NO_WARNINGS"/>
+            <string value="/D_SCL_SECURE_NO_WARNINGS"/>
+            <string value="/D_ENABLE_EXTENDED_ALIGNED_STORAGE"/>
+            <string value="/bigobj"/>
+            <string value="/wd4005"/>
+            <string value="/wd4068"/>
+            <string value="/wd4180"/>
+            <string value="/wd4244"/>
+            <string value="/wd4267"/>
+            <string value="/wd4503"/>
+            <string value="/wd4800"/>
+            <string value="/W3"/>
+            <string value="/DNOMINMAX"/>
+            <string value="/DWIN32_LEAN_AND_MEAN"/>
+            <string value="/D_CRT_SECURE_NO_WARNINGS"/>
+            <string value="/D_SCL_SECURE_NO_WARNINGS"/>
+            <string value="/D_ENABLE_EXTENDED_ALIGNED_STORAGE"/>
+            <string value="-Wall"/>
+            <string value="-Wextra"/>
+            <string value="-Wcast-qual"/>
+            <string value="-Wconversion"/>
+            <string value="-Wfloat-overflow-conversion"/>
+            <string value="-Wfloat-zero-conversion"/>
+            <string value="-Wfor-loop-analysis"/>
+            <string value="-Wformat-security"/>
+            <string value="-Wgnu-redeclared-enum"/>
+            <string value="-Winfinite-recursion"/>
+            <string value="-Winvalid-constexpr"/>
+            <string value="-Wliteral-conversion"/>
+            <string value="-Wmissing-declarations"/>
+            <string value="-Woverlength-strings"/>
+            <string value="-Wpointer-arith"/>
+            <string value="-Wself-assign"/>
+            <string value="-Wshadow-all"/>
+            <string value="-Wstring-conversion"/>
+            <string value="-Wtautological-overlap-compare"/>
+            <string value="-Wundef"/>
+            <string value="-Wuninitialized"/>
+            <string value="-Wunreachable-code"/>
+            <string value="-Wunused-comparison"/>
+            <string value="-Wunused-local-typedefs"/>
+            <string value="-Wunused-result"/>
+            <string value="-Wvla"/>
+            <string value="-Wwrite-strings"/>
+            <string value="-Wno-float-conversion"/>
+            <string value="-Wno-implicit-float-conversion"/>
+            <string value="-Wno-implicit-int-float-conversion"/>
+            <string value="-Wno-implicit-int-conversion"/>
+            <string value="-Wno-shorten-64-to-32"/>
+            <string value="-Wno-sign-conversion"/>
+            <string value="-Wno-unknown-warning-option"/>
+            <string value="-DNOMINMAX"/>
+            <string value="-Wall"/>
+            <string value="-Wextra"/>
+            <string value="-Wcast-qual"/>
+            <string value="-Wconversion-null"/>
+            <string value="-Wformat-security"/>
+            <string value="-Wmissing-declarations"/>
+            <string value="-Woverlength-strings"/>
+            <string value="-Wpointer-arith"/>
+            <string value="-Wundef"/>
+            <string value="-Wunused-local-typedefs"/>
+            <string value="-Wunused-result"/>
+            <string value="-Wvarargs"/>
+            <string value="-Wvla"/>
+            <string value="-Wwrite-strings"/>
+            <string value="-DNOMINMAX"/>
+        </list>
+        <list name="deps">
+            <label value="@com_google_absl//absl/base:config"/>
+            <label value="@com_google_absl//absl/base:raw_logging_internal"/>
+        </list>
+        <rule-input name="@com_google_absl//absl:clang-cl_compiler"/>
+        <rule-input name="@com_google_absl//absl:clang_compiler"/>
+        <rule-input name="@com_google_absl//absl:msvc_compiler"/>
+        <rule-input name="@com_google_absl//absl/base:config"/>
+        <rule-input name="@com_google_absl//absl/base:internal/throw_delegate.cc"/>
+        <rule-input name="@com_google_absl//absl/base:internal/throw_delegate.h"/>
+        <rule-input name="@com_google_absl//absl/base:raw_logging_internal"/>
+    </rule>
+    <rule class="cc_library" location="/private/var/tmp/_bazel_gwunleong/1cf6e3157016003ad3c69ac77713090f/external/com_google_absl/absl/memory/BUILD.bazel:28:11" name="@com_google_absl//absl/memory:memory">
+        <string name="name" value="memory"/>
+        <list name="hdrs">
+            <label value="@com_google_absl//absl/memory:memory.h"/>
+        </list>
+        <list name="linkopts">
+            <string value="-ignore:4221"/>
+        </list>
+        <list name="defines"/>
+        <list name="copts">
+            <string value="/W3"/>
+            <string value="/DNOMINMAX"/>
+            <string value="/DWIN32_LEAN_AND_MEAN"/>
+            <string value="/D_CRT_SECURE_NO_WARNINGS"/>
+            <string value="/D_SCL_SECURE_NO_WARNINGS"/>
+            <string value="/D_ENABLE_EXTENDED_ALIGNED_STORAGE"/>
+            <string value="/bigobj"/>
+            <string value="/wd4005"/>
+            <string value="/wd4068"/>
+            <string value="/wd4180"/>
+            <string value="/wd4244"/>
+            <string value="/wd4267"/>
+            <string value="/wd4503"/>
+            <string value="/wd4800"/>
+            <string value="/W3"/>
+            <string value="/DNOMINMAX"/>
+            <string value="/DWIN32_LEAN_AND_MEAN"/>
+            <string value="/D_CRT_SECURE_NO_WARNINGS"/>
+            <string value="/D_SCL_SECURE_NO_WARNINGS"/>
+            <string value="/D_ENABLE_EXTENDED_ALIGNED_STORAGE"/>
+            <string value="-Wall"/>
+            <string value="-Wextra"/>
+            <string value="-Wcast-qual"/>
+            <string value="-Wconversion"/>
+            <string value="-Wfloat-overflow-conversion"/>
+            <string value="-Wfloat-zero-conversion"/>
+            <string value="-Wfor-loop-analysis"/>
+            <string value="-Wformat-security"/>
+            <string value="-Wgnu-redeclared-enum"/>
+            <string value="-Winfinite-recursion"/>
+            <string value="-Winvalid-constexpr"/>
+            <string value="-Wliteral-conversion"/>
+            <string value="-Wmissing-declarations"/>
+            <string value="-Woverlength-strings"/>
+            <string value="-Wpointer-arith"/>
+            <string value="-Wself-assign"/>
+            <string value="-Wshadow-all"/>
+            <string value="-Wstring-conversion"/>
+            <string value="-Wtautological-overlap-compare"/>
+            <string value="-Wundef"/>
+            <string value="-Wuninitialized"/>
+            <string value="-Wunreachable-code"/>
+            <string value="-Wunused-comparison"/>
+            <string value="-Wunused-local-typedefs"/>
+            <string value="-Wunused-result"/>
+            <string value="-Wvla"/>
+            <string value="-Wwrite-strings"/>
+            <string value="-Wno-float-conversion"/>
+            <string value="-Wno-implicit-float-conversion"/>
+            <string value="-Wno-implicit-int-float-conversion"/>
+            <string value="-Wno-implicit-int-conversion"/>
+            <string value="-Wno-shorten-64-to-32"/>
+            <string value="-Wno-sign-conversion"/>
+            <string value="-Wno-unknown-warning-option"/>
+            <string value="-DNOMINMAX"/>
+            <string value="-Wall"/>
+            <string value="-Wextra"/>
+            <string value="-Wcast-qual"/>
+            <string value="-Wconversion-null"/>
+            <string value="-Wformat-security"/>
+            <string value="-Wmissing-declarations"/>
+            <string value="-Woverlength-strings"/>
+            <string value="-Wpointer-arith"/>
+            <string value="-Wundef"/>
+            <string value="-Wunused-local-typedefs"/>
+            <string value="-Wunused-result"/>
+            <string value="-Wvarargs"/>
+            <string value="-Wvla"/>
+            <string value="-Wwrite-strings"/>
+            <string value="-DNOMINMAX"/>
+        </list>
+        <list name="deps">
+            <label value="@com_google_absl//absl/base:core_headers"/>
+            <label value="@com_google_absl//absl/meta:type_traits"/>
+        </list>
+        <rule-input name="@com_google_absl//absl:clang-cl_compiler"/>
+        <rule-input name="@com_google_absl//absl:clang_compiler"/>
+        <rule-input name="@com_google_absl//absl:msvc_compiler"/>
+        <rule-input name="@com_google_absl//absl/base:core_headers"/>
+        <rule-input name="@com_google_absl//absl/memory:memory.h"/>
+        <rule-input name="@com_google_absl//absl/meta:type_traits"/>
+    </rule>
+    <source-file location="/private/var/tmp/_bazel_gwunleong/1cf6e3157016003ad3c69ac77713090f/external/com_google_absl/absl/memory/memory.h:1:1" name="@com_google_absl//absl/memory:memory.h">
+        <visibility-label name="//visibility:public"/>
+    </source-file>
+    <rule class="cc_library" location="/private/var/tmp/_bazel_gwunleong/1cf6e3157016003ad3c69ac77713090f/external/com_google_absl/absl/meta/BUILD.bazel:28:11" name="@com_google_absl//absl/meta:type_traits">
+        <string name="name" value="type_traits"/>
+        <list name="hdrs">
+            <label value="@com_google_absl//absl/meta:type_traits.h"/>
+        </list>
+        <list name="linkopts">
+            <string value="-ignore:4221"/>
+        </list>
+        <list name="copts">
+            <string value="/W3"/>
+            <string value="/DNOMINMAX"/>
+            <string value="/DWIN32_LEAN_AND_MEAN"/>
+            <string value="/D_CRT_SECURE_NO_WARNINGS"/>
+            <string value="/D_SCL_SECURE_NO_WARNINGS"/>
+            <string value="/D_ENABLE_EXTENDED_ALIGNED_STORAGE"/>
+            <string value="/bigobj"/>
+            <string value="/wd4005"/>
+            <string value="/wd4068"/>
+            <string value="/wd4180"/>
+            <string value="/wd4244"/>
+            <string value="/wd4267"/>
+            <string value="/wd4503"/>
+            <string value="/wd4800"/>
+            <string value="/W3"/>
+            <string value="/DNOMINMAX"/>
+            <string value="/DWIN32_LEAN_AND_MEAN"/>
+            <string value="/D_CRT_SECURE_NO_WARNINGS"/>
+            <string value="/D_SCL_SECURE_NO_WARNINGS"/>
+            <string value="/D_ENABLE_EXTENDED_ALIGNED_STORAGE"/>
+            <string value="-Wall"/>
+            <string value="-Wextra"/>
+            <string value="-Wcast-qual"/>
+            <string value="-Wconversion"/>
+            <string value="-Wfloat-overflow-conversion"/>
+            <string value="-Wfloat-zero-conversion"/>
+            <string value="-Wfor-loop-analysis"/>
+            <string value="-Wformat-security"/>
+            <string value="-Wgnu-redeclared-enum"/>
+            <string value="-Winfinite-recursion"/>
+            <string value="-Winvalid-constexpr"/>
+            <string value="-Wliteral-conversion"/>
+            <string value="-Wmissing-declarations"/>
+            <string value="-Woverlength-strings"/>
+            <string value="-Wpointer-arith"/>
+            <string value="-Wself-assign"/>
+            <string value="-Wshadow-all"/>
+            <string value="-Wstring-conversion"/>
+            <string value="-Wtautological-overlap-compare"/>
+            <string value="-Wundef"/>
+            <string value="-Wuninitialized"/>
+            <string value="-Wunreachable-code"/>
+            <string value="-Wunused-comparison"/>
+            <string value="-Wunused-local-typedefs"/>
+            <string value="-Wunused-result"/>
+            <string value="-Wvla"/>
+            <string value="-Wwrite-strings"/>
+            <string value="-Wno-float-conversion"/>
+            <string value="-Wno-implicit-float-conversion"/>
+            <string value="-Wno-implicit-int-float-conversion"/>
+            <string value="-Wno-implicit-int-conversion"/>
+            <string value="-Wno-shorten-64-to-32"/>
+            <string value="-Wno-sign-conversion"/>
+            <string value="-Wno-unknown-warning-option"/>
+            <string value="-DNOMINMAX"/>
+            <string value="-Wall"/>
+            <string value="-Wextra"/>
+            <string value="-Wcast-qual"/>
+            <string value="-Wconversion-null"/>
+            <string value="-Wformat-security"/>
+            <string value="-Wmissing-declarations"/>
+            <string value="-Woverlength-strings"/>
+            <string value="-Wpointer-arith"/>
+            <string value="-Wundef"/>
+            <string value="-Wunused-local-typedefs"/>
+            <string value="-Wunused-result"/>
+            <string value="-Wvarargs"/>
+            <string value="-Wvla"/>
+            <string value="-Wwrite-strings"/>
+            <string value="-DNOMINMAX"/>
+        </list>
+        <list name="deps">
+            <label value="@com_google_absl//absl/base:config"/>
+        </list>
+        <rule-input name="@com_google_absl//absl:clang-cl_compiler"/>
+        <rule-input name="@com_google_absl//absl:clang_compiler"/>
+        <rule-input name="@com_google_absl//absl:msvc_compiler"/>
+        <rule-input name="@com_google_absl//absl/base:config"/>
+        <rule-input name="@com_google_absl//absl/meta:type_traits.h"/>
+    </rule>
+    <source-file location="/private/var/tmp/_bazel_gwunleong/1cf6e3157016003ad3c69ac77713090f/external/com_google_absl/absl/meta/type_traits.h:1:1" name="@com_google_absl//absl/meta:type_traits.h">
+        <visibility-label name="//visibility:public"/>
+    </source-file>
+    <rule class="cc_library" location="/private/var/tmp/_bazel_gwunleong/1cf6e3157016003ad3c69ac77713090f/external/com_google_absl/absl/numeric/BUILD.bazel:26:11" name="@com_google_absl//absl/numeric:bits">
+        <string name="name" value="bits"/>
+        <list name="hdrs">
+            <label value="@com_google_absl//absl/numeric:bits.h"/>
+            <label value="@com_google_absl//absl/numeric:internal/bits.h"/>
+        </list>
+        <list name="linkopts">
+            <string value="-ignore:4221"/>
+        </list>
+        <list name="copts">
+            <string value="/W3"/>
+            <string value="/DNOMINMAX"/>
+            <string value="/DWIN32_LEAN_AND_MEAN"/>
+            <string value="/D_CRT_SECURE_NO_WARNINGS"/>
+            <string value="/D_SCL_SECURE_NO_WARNINGS"/>
+            <string value="/D_ENABLE_EXTENDED_ALIGNED_STORAGE"/>
+            <string value="/bigobj"/>
+            <string value="/wd4005"/>
+            <string value="/wd4068"/>
+            <string value="/wd4180"/>
+            <string value="/wd4244"/>
+            <string value="/wd4267"/>
+            <string value="/wd4503"/>
+            <string value="/wd4800"/>
+            <string value="/W3"/>
+            <string value="/DNOMINMAX"/>
+            <string value="/DWIN32_LEAN_AND_MEAN"/>
+            <string value="/D_CRT_SECURE_NO_WARNINGS"/>
+            <string value="/D_SCL_SECURE_NO_WARNINGS"/>
+            <string value="/D_ENABLE_EXTENDED_ALIGNED_STORAGE"/>
+            <string value="-Wall"/>
+            <string value="-Wextra"/>
+            <string value="-Wcast-qual"/>
+            <string value="-Wconversion"/>
+            <string value="-Wfloat-overflow-conversion"/>
+            <string value="-Wfloat-zero-conversion"/>
+            <string value="-Wfor-loop-analysis"/>
+            <string value="-Wformat-security"/>
+            <string value="-Wgnu-redeclared-enum"/>
+            <string value="-Winfinite-recursion"/>
+            <string value="-Winvalid-constexpr"/>
+            <string value="-Wliteral-conversion"/>
+            <string value="-Wmissing-declarations"/>
+            <string value="-Woverlength-strings"/>
+            <string value="-Wpointer-arith"/>
+            <string value="-Wself-assign"/>
+            <string value="-Wshadow-all"/>
+            <string value="-Wstring-conversion"/>
+            <string value="-Wtautological-overlap-compare"/>
+            <string value="-Wundef"/>
+            <string value="-Wuninitialized"/>
+            <string value="-Wunreachable-code"/>
+            <string value="-Wunused-comparison"/>
+            <string value="-Wunused-local-typedefs"/>
+            <string value="-Wunused-result"/>
+            <string value="-Wvla"/>
+            <string value="-Wwrite-strings"/>
+            <string value="-Wno-float-conversion"/>
+            <string value="-Wno-implicit-float-conversion"/>
+            <string value="-Wno-implicit-int-float-conversion"/>
+            <string value="-Wno-implicit-int-conversion"/>
+            <string value="-Wno-shorten-64-to-32"/>
+            <string value="-Wno-sign-conversion"/>
+            <string value="-Wno-unknown-warning-option"/>
+            <string value="-DNOMINMAX"/>
+            <string value="-Wall"/>
+            <string value="-Wextra"/>
+            <string value="-Wcast-qual"/>
+            <string value="-Wconversion-null"/>
+            <string value="-Wformat-security"/>
+            <string value="-Wmissing-declarations"/>
+            <string value="-Woverlength-strings"/>
+            <string value="-Wpointer-arith"/>
+            <string value="-Wundef"/>
+            <string value="-Wunused-local-typedefs"/>
+            <string value="-Wunused-result"/>
+            <string value="-Wvarargs"/>
+            <string value="-Wvla"/>
+            <string value="-Wwrite-strings"/>
+            <string value="-DNOMINMAX"/>
+        </list>
+        <list name="deps">
+            <label value="@com_google_absl//absl/base:config"/>
+            <label value="@com_google_absl//absl/base:core_headers"/>
+        </list>
+        <rule-input name="@com_google_absl//absl:clang-cl_compiler"/>
+        <rule-input name="@com_google_absl//absl:clang_compiler"/>
+        <rule-input name="@com_google_absl//absl:msvc_compiler"/>
+        <rule-input name="@com_google_absl//absl/base:config"/>
+        <rule-input name="@com_google_absl//absl/base:core_headers"/>
+        <rule-input name="@com_google_absl//absl/numeric:bits.h"/>
+        <rule-input name="@com_google_absl//absl/numeric:internal/bits.h"/>
+    </rule>
+    <source-file location="/private/var/tmp/_bazel_gwunleong/1cf6e3157016003ad3c69ac77713090f/external/com_google_absl/absl/numeric/bits.h:1:1" name="@com_google_absl//absl/numeric:bits.h">
+        <visibility-label name="//visibility:public"/>
+    </source-file>
+    <rule class="cc_library" location="/private/var/tmp/_bazel_gwunleong/1cf6e3157016003ad3c69ac77713090f/external/com_google_absl/absl/numeric/BUILD.bazel:69:11" name="@com_google_absl//absl/numeric:int128">
+        <string name="name" value="int128"/>
+        <list name="srcs">
+            <label value="@com_google_absl//absl/numeric:int128.cc"/>
+            <label value="@com_google_absl//absl/numeric:int128_have_intrinsic.inc"/>
+            <label value="@com_google_absl//absl/numeric:int128_no_intrinsic.inc"/>
+        </list>
+        <list name="hdrs">
+            <label value="@com_google_absl//absl/numeric:int128.h"/>
+        </list>
+        <list name="linkopts">
+            <string value="-ignore:4221"/>
+        </list>
+        <list name="copts">
+            <string value="/W3"/>
+            <string value="/DNOMINMAX"/>
+            <string value="/DWIN32_LEAN_AND_MEAN"/>
+            <string value="/D_CRT_SECURE_NO_WARNINGS"/>
+            <string value="/D_SCL_SECURE_NO_WARNINGS"/>
+            <string value="/D_ENABLE_EXTENDED_ALIGNED_STORAGE"/>
+            <string value="/bigobj"/>
+            <string value="/wd4005"/>
+            <string value="/wd4068"/>
+            <string value="/wd4180"/>
+            <string value="/wd4244"/>
+            <string value="/wd4267"/>
+            <string value="/wd4503"/>
+            <string value="/wd4800"/>
+            <string value="/W3"/>
+            <string value="/DNOMINMAX"/>
+            <string value="/DWIN32_LEAN_AND_MEAN"/>
+            <string value="/D_CRT_SECURE_NO_WARNINGS"/>
+            <string value="/D_SCL_SECURE_NO_WARNINGS"/>
+            <string value="/D_ENABLE_EXTENDED_ALIGNED_STORAGE"/>
+            <string value="-Wall"/>
+            <string value="-Wextra"/>
+            <string value="-Wcast-qual"/>
+            <string value="-Wconversion"/>
+            <string value="-Wfloat-overflow-conversion"/>
+            <string value="-Wfloat-zero-conversion"/>
+            <string value="-Wfor-loop-analysis"/>
+            <string value="-Wformat-security"/>
+            <string value="-Wgnu-redeclared-enum"/>
+            <string value="-Winfinite-recursion"/>
+            <string value="-Winvalid-constexpr"/>
+            <string value="-Wliteral-conversion"/>
+            <string value="-Wmissing-declarations"/>
+            <string value="-Woverlength-strings"/>
+            <string value="-Wpointer-arith"/>
+            <string value="-Wself-assign"/>
+            <string value="-Wshadow-all"/>
+            <string value="-Wstring-conversion"/>
+            <string value="-Wtautological-overlap-compare"/>
+            <string value="-Wundef"/>
+            <string value="-Wuninitialized"/>
+            <string value="-Wunreachable-code"/>
+            <string value="-Wunused-comparison"/>
+            <string value="-Wunused-local-typedefs"/>
+            <string value="-Wunused-result"/>
+            <string value="-Wvla"/>
+            <string value="-Wwrite-strings"/>
+            <string value="-Wno-float-conversion"/>
+            <string value="-Wno-implicit-float-conversion"/>
+            <string value="-Wno-implicit-int-float-conversion"/>
+            <string value="-Wno-implicit-int-conversion"/>
+            <string value="-Wno-shorten-64-to-32"/>
+            <string value="-Wno-sign-conversion"/>
+            <string value="-Wno-unknown-warning-option"/>
+            <string value="-DNOMINMAX"/>
+            <string value="-Wall"/>
+            <string value="-Wextra"/>
+            <string value="-Wcast-qual"/>
+            <string value="-Wconversion-null"/>
+            <string value="-Wformat-security"/>
+            <string value="-Wmissing-declarations"/>
+            <string value="-Woverlength-strings"/>
+            <string value="-Wpointer-arith"/>
+            <string value="-Wundef"/>
+            <string value="-Wunused-local-typedefs"/>
+            <string value="-Wunused-result"/>
+            <string value="-Wvarargs"/>
+            <string value="-Wvla"/>
+            <string value="-Wwrite-strings"/>
+            <string value="-DNOMINMAX"/>
+        </list>
+        <list name="deps">
+            <label value="@com_google_absl//absl/numeric:bits"/>
+            <label value="@com_google_absl//absl/base:config"/>
+            <label value="@com_google_absl//absl/base:core_headers"/>
+        </list>
+        <rule-input name="@com_google_absl//absl:clang-cl_compiler"/>
+        <rule-input name="@com_google_absl//absl:clang_compiler"/>
+        <rule-input name="@com_google_absl//absl:msvc_compiler"/>
+        <rule-input name="@com_google_absl//absl/base:config"/>
+        <rule-input name="@com_google_absl//absl/base:core_headers"/>
+        <rule-input name="@com_google_absl//absl/numeric:bits"/>
+        <rule-input name="@com_google_absl//absl/numeric:int128.cc"/>
+        <rule-input name="@com_google_absl//absl/numeric:int128.h"/>
+        <rule-input name="@com_google_absl//absl/numeric:int128_have_intrinsic.inc"/>
+        <rule-input name="@com_google_absl//absl/numeric:int128_no_intrinsic.inc"/>
+    </rule>
+    <source-file location="/private/var/tmp/_bazel_gwunleong/1cf6e3157016003ad3c69ac77713090f/external/com_google_absl/absl/numeric/int128.cc:1:1" name="@com_google_absl//absl/numeric:int128.cc">
+        <visibility-label name="//visibility:public"/>
+    </source-file>
+    <source-file location="/private/var/tmp/_bazel_gwunleong/1cf6e3157016003ad3c69ac77713090f/external/com_google_absl/absl/numeric/int128.h:1:1" name="@com_google_absl//absl/numeric:int128.h">
+        <visibility-label name="//visibility:public"/>
+    </source-file>
+    <source-file location="/private/var/tmp/_bazel_gwunleong/1cf6e3157016003ad3c69ac77713090f/external/com_google_absl/absl/numeric/int128_have_intrinsic.inc:1:1" name="@com_google_absl//absl/numeric:int128_have_intrinsic.inc">
+        <visibility-label name="//visibility:public"/>
+    </source-file>
+    <source-file location="/private/var/tmp/_bazel_gwunleong/1cf6e3157016003ad3c69ac77713090f/external/com_google_absl/absl/numeric/int128_no_intrinsic.inc:1:1" name="@com_google_absl//absl/numeric:int128_no_intrinsic.inc">
+        <visibility-label name="//visibility:public"/>
+    </source-file>
+    <source-file location="/private/var/tmp/_bazel_gwunleong/1cf6e3157016003ad3c69ac77713090f/external/com_google_absl/absl/numeric/internal/bits.h:1:1" name="@com_google_absl//absl/numeric:internal/bits.h">
+        <visibility-label name="//visibility:public"/>
+    </source-file>
+    <source-file location="/private/var/tmp/_bazel_gwunleong/1cf6e3157016003ad3c69ac77713090f/external/com_google_absl/absl/strings/ascii.cc:1:1" name="@com_google_absl//absl/strings:ascii.cc">
+        <visibility-label name="//visibility:public"/>
+    </source-file>
+    <source-file location="/private/var/tmp/_bazel_gwunleong/1cf6e3157016003ad3c69ac77713090f/external/com_google_absl/absl/strings/ascii.h:1:1" name="@com_google_absl//absl/strings:ascii.h">
+        <visibility-label name="//visibility:public"/>
+    </source-file>
+    <source-file location="/private/var/tmp/_bazel_gwunleong/1cf6e3157016003ad3c69ac77713090f/external/com_google_absl/absl/strings/charconv.cc:1:1" name="@com_google_absl//absl/strings:charconv.cc">
+        <visibility-label name="//visibility:public"/>
+    </source-file>
+    <source-file location="/private/var/tmp/_bazel_gwunleong/1cf6e3157016003ad3c69ac77713090f/external/com_google_absl/absl/strings/charconv.h:1:1" name="@com_google_absl//absl/strings:charconv.h">
+        <visibility-label name="//visibility:public"/>
+    </source-file>
+    <source-file location="/private/var/tmp/_bazel_gwunleong/1cf6e3157016003ad3c69ac77713090f/external/com_google_absl/absl/strings/escaping.cc:1:1" name="@com_google_absl//absl/strings:escaping.cc">
+        <visibility-label name="//visibility:public"/>
+    </source-file>
+    <source-file location="/private/var/tmp/_bazel_gwunleong/1cf6e3157016003ad3c69ac77713090f/external/com_google_absl/absl/strings/escaping.h:1:1" name="@com_google_absl//absl/strings:escaping.h">
+        <visibility-label name="//visibility:public"/>
+    </source-file>
+    <rule class="cc_library" location="/private/var/tmp/_bazel_gwunleong/1cf6e3157016003ad3c69ac77713090f/external/com_google_absl/absl/strings/BUILD.bazel:85:11" name="@com_google_absl//absl/strings:internal">
+        <string name="name" value="internal"/>
+        <list name="srcs">
+            <label value="@com_google_absl//absl/strings:internal/escaping.cc"/>
+            <label value="@com_google_absl//absl/strings:internal/ostringstream.cc"/>
+            <label value="@com_google_absl//absl/strings:internal/utf8.cc"/>
+        </list>
+        <list name="hdrs">
+            <label value="@com_google_absl//absl/strings:internal/char_map.h"/>
+            <label value="@com_google_absl//absl/strings:internal/escaping.h"/>
+            <label value="@com_google_absl//absl/strings:internal/ostringstream.h"/>
+            <label value="@com_google_absl//absl/strings:internal/resize_uninitialized.h"/>
+            <label value="@com_google_absl//absl/strings:internal/utf8.h"/>
+        </list>
+        <list name="linkopts">
+            <string value="-ignore:4221"/>
+        </list>
+        <list name="copts">
+            <string value="/W3"/>
+            <string value="/DNOMINMAX"/>
+            <string value="/DWIN32_LEAN_AND_MEAN"/>
+            <string value="/D_CRT_SECURE_NO_WARNINGS"/>
+            <string value="/D_SCL_SECURE_NO_WARNINGS"/>
+            <string value="/D_ENABLE_EXTENDED_ALIGNED_STORAGE"/>
+            <string value="/bigobj"/>
+            <string value="/wd4005"/>
+            <string value="/wd4068"/>
+            <string value="/wd4180"/>
+            <string value="/wd4244"/>
+            <string value="/wd4267"/>
+            <string value="/wd4503"/>
+            <string value="/wd4800"/>
+            <string value="/W3"/>
+            <string value="/DNOMINMAX"/>
+            <string value="/DWIN32_LEAN_AND_MEAN"/>
+            <string value="/D_CRT_SECURE_NO_WARNINGS"/>
+            <string value="/D_SCL_SECURE_NO_WARNINGS"/>
+            <string value="/D_ENABLE_EXTENDED_ALIGNED_STORAGE"/>
+            <string value="-Wall"/>
+            <string value="-Wextra"/>
+            <string value="-Wcast-qual"/>
+            <string value="-Wconversion"/>
+            <string value="-Wfloat-overflow-conversion"/>
+            <string value="-Wfloat-zero-conversion"/>
+            <string value="-Wfor-loop-analysis"/>
+            <string value="-Wformat-security"/>
+            <string value="-Wgnu-redeclared-enum"/>
+            <string value="-Winfinite-recursion"/>
+            <string value="-Winvalid-constexpr"/>
+            <string value="-Wliteral-conversion"/>
+            <string value="-Wmissing-declarations"/>
+            <string value="-Woverlength-strings"/>
+            <string value="-Wpointer-arith"/>
+            <string value="-Wself-assign"/>
+            <string value="-Wshadow-all"/>
+            <string value="-Wstring-conversion"/>
+            <string value="-Wtautological-overlap-compare"/>
+            <string value="-Wundef"/>
+            <string value="-Wuninitialized"/>
+            <string value="-Wunreachable-code"/>
+            <string value="-Wunused-comparison"/>
+            <string value="-Wunused-local-typedefs"/>
+            <string value="-Wunused-result"/>
+            <string value="-Wvla"/>
+            <string value="-Wwrite-strings"/>
+            <string value="-Wno-float-conversion"/>
+            <string value="-Wno-implicit-float-conversion"/>
+            <string value="-Wno-implicit-int-float-conversion"/>
+            <string value="-Wno-implicit-int-conversion"/>
+            <string value="-Wno-shorten-64-to-32"/>
+            <string value="-Wno-sign-conversion"/>
+            <string value="-Wno-unknown-warning-option"/>
+            <string value="-DNOMINMAX"/>
+            <string value="-Wall"/>
+            <string value="-Wextra"/>
+            <string value="-Wcast-qual"/>
+            <string value="-Wconversion-null"/>
+            <string value="-Wformat-security"/>
+            <string value="-Wmissing-declarations"/>
+            <string value="-Woverlength-strings"/>
+            <string value="-Wpointer-arith"/>
+            <string value="-Wundef"/>
+            <string value="-Wunused-local-typedefs"/>
+            <string value="-Wunused-result"/>
+            <string value="-Wvarargs"/>
+            <string value="-Wvla"/>
+            <string value="-Wwrite-strings"/>
+            <string value="-DNOMINMAX"/>
+        </list>
+        <list name="deps">
+            <label value="@com_google_absl//absl/base:config"/>
+            <label value="@com_google_absl//absl/base:core_headers"/>
+            <label value="@com_google_absl//absl/base:endian"/>
+            <label value="@com_google_absl//absl/base:raw_logging_internal"/>
+            <label value="@com_google_absl//absl/meta:type_traits"/>
+        </list>
+        <rule-input name="@com_google_absl//absl:clang-cl_compiler"/>
+        <rule-input name="@com_google_absl//absl:clang_compiler"/>
+        <rule-input name="@com_google_absl//absl:msvc_compiler"/>
+        <rule-input name="@com_google_absl//absl/base:config"/>
+        <rule-input name="@com_google_absl//absl/base:core_headers"/>
+        <rule-input name="@com_google_absl//absl/base:endian"/>
+        <rule-input name="@com_google_absl//absl/base:raw_logging_internal"/>
+        <rule-input name="@com_google_absl//absl/meta:type_traits"/>
+        <rule-input name="@com_google_absl//absl/strings:internal/char_map.h"/>
+        <rule-input name="@com_google_absl//absl/strings:internal/escaping.cc"/>
+        <rule-input name="@com_google_absl//absl/strings:internal/escaping.h"/>
+        <rule-input name="@com_google_absl//absl/strings:internal/ostringstream.cc"/>
+        <rule-input name="@com_google_absl//absl/strings:internal/ostringstream.h"/>
+        <rule-input name="@com_google_absl//absl/strings:internal/resize_uninitialized.h"/>
+        <rule-input name="@com_google_absl//absl/strings:internal/utf8.cc"/>
+        <rule-input name="@com_google_absl//absl/strings:internal/utf8.h"/>
+        <rule-default-setting name="parse_headers"/>
+    </rule>
+    <source-file location="/private/var/tmp/_bazel_gwunleong/1cf6e3157016003ad3c69ac77713090f/external/com_google_absl/absl/strings/internal/char_map.h:1:1" name="@com_google_absl//absl/strings:internal/char_map.h">
+        <visibility-label name="//visibility:public"/>
+    </source-file>
+    <source-file location="/private/var/tmp/_bazel_gwunleong/1cf6e3157016003ad3c69ac77713090f/external/com_google_absl/absl/strings/internal/charconv_bigint.cc:1:1" name="@com_google_absl//absl/strings:internal/charconv_bigint.cc">
+        <visibility-label name="//visibility:public"/>
+    </source-file>
+    <source-file location="/private/var/tmp/_bazel_gwunleong/1cf6e3157016003ad3c69ac77713090f/external/com_google_absl/absl/strings/internal/charconv_bigint.h:1:1" name="@com_google_absl//absl/strings:internal/charconv_bigint.h">
+        <visibility-label name="//visibility:public"/>
+    </source-file>
+    <source-file location="/private/var/tmp/_bazel_gwunleong/1cf6e3157016003ad3c69ac77713090f/external/com_google_absl/absl/strings/internal/charconv_parse.cc:1:1" name="@com_google_absl//absl/strings:internal/charconv_parse.cc">
+        <visibility-label name="//visibility:public"/>
+    </source-file>
+    <source-file location="/private/var/tmp/_bazel_gwunleong/1cf6e3157016003ad3c69ac77713090f/external/com_google_absl/absl/strings/internal/charconv_parse.h:1:1" name="@com_google_absl//absl/strings:internal/charconv_parse.h">
+        <visibility-label name="//visibility:public"/>
+    </source-file>
+    <source-file location="/private/var/tmp/_bazel_gwunleong/1cf6e3157016003ad3c69ac77713090f/external/com_google_absl/absl/strings/internal/escaping.cc:1:1" name="@com_google_absl//absl/strings:internal/escaping.cc">
+        <visibility-label name="//visibility:public"/>
+    </source-file>
+    <source-file location="/private/var/tmp/_bazel_gwunleong/1cf6e3157016003ad3c69ac77713090f/external/com_google_absl/absl/strings/internal/escaping.h:1:1" name="@com_google_absl//absl/strings:internal/escaping.h">
+        <visibility-label name="//visibility:public"/>
+    </source-file>
+    <source-file location="/private/var/tmp/_bazel_gwunleong/1cf6e3157016003ad3c69ac77713090f/external/com_google_absl/absl/strings/internal/memutil.cc:1:1" name="@com_google_absl//absl/strings:internal/memutil.cc">
+        <visibility-label name="//visibility:public"/>
+    </source-file>
+    <source-file location="/private/var/tmp/_bazel_gwunleong/1cf6e3157016003ad3c69ac77713090f/external/com_google_absl/absl/strings/internal/memutil.h:1:1" name="@com_google_absl//absl/strings:internal/memutil.h">
+        <visibility-label name="//visibility:public"/>
+    </source-file>
+    <source-file location="/private/var/tmp/_bazel_gwunleong/1cf6e3157016003ad3c69ac77713090f/external/com_google_absl/absl/strings/internal/ostringstream.cc:1:1" name="@com_google_absl//absl/strings:internal/ostringstream.cc">
+        <visibility-label name="//visibility:public"/>
+    </source-file>
+    <source-file location="/private/var/tmp/_bazel_gwunleong/1cf6e3157016003ad3c69ac77713090f/external/com_google_absl/absl/strings/internal/ostringstream.h:1:1" name="@com_google_absl//absl/strings:internal/ostringstream.h">
+        <visibility-label name="//visibility:public"/>
+    </source-file>
+    <source-file location="/private/var/tmp/_bazel_gwunleong/1cf6e3157016003ad3c69ac77713090f/external/com_google_absl/absl/strings/internal/resize_uninitialized.h:1:1" name="@com_google_absl//absl/strings:internal/resize_uninitialized.h">
+        <visibility-label name="//visibility:public"/>
+    </source-file>
+    <source-file location="/private/var/tmp/_bazel_gwunleong/1cf6e3157016003ad3c69ac77713090f/external/com_google_absl/absl/strings/internal/stl_type_traits.h:1:1" name="@com_google_absl//absl/strings:internal/stl_type_traits.h">
+        <visibility-label name="//visibility:public"/>
+    </source-file>
+    <source-file location="/private/var/tmp/_bazel_gwunleong/1cf6e3157016003ad3c69ac77713090f/external/com_google_absl/absl/strings/internal/str_join_internal.h:1:1" name="@com_google_absl//absl/strings:internal/str_join_internal.h">
+        <visibility-label name="//visibility:public"/>
+    </source-file>
+    <source-file location="/private/var/tmp/_bazel_gwunleong/1cf6e3157016003ad3c69ac77713090f/external/com_google_absl/absl/strings/internal/str_split_internal.h:1:1" name="@com_google_absl//absl/strings:internal/str_split_internal.h">
+        <visibility-label name="//visibility:public"/>
+    </source-file>
+    <source-file location="/private/var/tmp/_bazel_gwunleong/1cf6e3157016003ad3c69ac77713090f/external/com_google_absl/absl/strings/internal/string_constant.h:1:1" name="@com_google_absl//absl/strings:internal/string_constant.h">
+        <visibility-label name="//visibility:public"/>
+    </source-file>
+    <source-file location="/private/var/tmp/_bazel_gwunleong/1cf6e3157016003ad3c69ac77713090f/external/com_google_absl/absl/strings/internal/utf8.cc:1:1" name="@com_google_absl//absl/strings:internal/utf8.cc">
+        <visibility-label name="//visibility:public"/>
+    </source-file>
+    <source-file location="/private/var/tmp/_bazel_gwunleong/1cf6e3157016003ad3c69ac77713090f/external/com_google_absl/absl/strings/internal/utf8.h:1:1" name="@com_google_absl//absl/strings:internal/utf8.h">
+        <visibility-label name="//visibility:public"/>
+    </source-file>
+    <source-file location="/private/var/tmp/_bazel_gwunleong/1cf6e3157016003ad3c69ac77713090f/external/com_google_absl/absl/strings/match.cc:1:1" name="@com_google_absl//absl/strings:match.cc">
+        <visibility-label name="//visibility:public"/>
+    </source-file>
+    <source-file location="/private/var/tmp/_bazel_gwunleong/1cf6e3157016003ad3c69ac77713090f/external/com_google_absl/absl/strings/match.h:1:1" name="@com_google_absl//absl/strings:match.h">
+        <visibility-label name="//visibility:public"/>
+    </source-file>
+    <source-file location="/private/var/tmp/_bazel_gwunleong/1cf6e3157016003ad3c69ac77713090f/external/com_google_absl/absl/strings/numbers.cc:1:1" name="@com_google_absl//absl/strings:numbers.cc">
+        <visibility-label name="//visibility:public"/>
+    </source-file>
+    <source-file location="/private/var/tmp/_bazel_gwunleong/1cf6e3157016003ad3c69ac77713090f/external/com_google_absl/absl/strings/numbers.h:1:1" name="@com_google_absl//absl/strings:numbers.h">
+        <visibility-label name="//visibility:public"/>
+    </source-file>
+    <source-file location="/private/var/tmp/_bazel_gwunleong/1cf6e3157016003ad3c69ac77713090f/external/com_google_absl/absl/strings/str_cat.cc:1:1" name="@com_google_absl//absl/strings:str_cat.cc">
+        <visibility-label name="//visibility:public"/>
+    </source-file>
+    <source-file location="/private/var/tmp/_bazel_gwunleong/1cf6e3157016003ad3c69ac77713090f/external/com_google_absl/absl/strings/str_cat.h:1:1" name="@com_google_absl//absl/strings:str_cat.h">
+        <visibility-label name="//visibility:public"/>
+    </source-file>
+    <source-file location="/private/var/tmp/_bazel_gwunleong/1cf6e3157016003ad3c69ac77713090f/external/com_google_absl/absl/strings/str_join.h:1:1" name="@com_google_absl//absl/strings:str_join.h">
+        <visibility-label name="//visibility:public"/>
+    </source-file>
+    <source-file location="/private/var/tmp/_bazel_gwunleong/1cf6e3157016003ad3c69ac77713090f/external/com_google_absl/absl/strings/str_replace.cc:1:1" name="@com_google_absl//absl/strings:str_replace.cc">
+        <visibility-label name="//visibility:public"/>
+    </source-file>
+    <source-file location="/private/var/tmp/_bazel_gwunleong/1cf6e3157016003ad3c69ac77713090f/external/com_google_absl/absl/strings/str_replace.h:1:1" name="@com_google_absl//absl/strings:str_replace.h">
+        <visibility-label name="//visibility:public"/>
+    </source-file>
+    <source-file location="/private/var/tmp/_bazel_gwunleong/1cf6e3157016003ad3c69ac77713090f/external/com_google_absl/absl/strings/str_split.cc:1:1" name="@com_google_absl//absl/strings:str_split.cc">
+        <visibility-label name="//visibility:public"/>
+    </source-file>
+    <source-file location="/private/var/tmp/_bazel_gwunleong/1cf6e3157016003ad3c69ac77713090f/external/com_google_absl/absl/strings/str_split.h:1:1" name="@com_google_absl//absl/strings:str_split.h">
+        <visibility-label name="//visibility:public"/>
+    </source-file>
+    <source-file location="/private/var/tmp/_bazel_gwunleong/1cf6e3157016003ad3c69ac77713090f/external/com_google_absl/absl/strings/string_view.cc:1:1" name="@com_google_absl//absl/strings:string_view.cc">
+        <visibility-label name="//visibility:public"/>
+    </source-file>
+    <source-file location="/private/var/tmp/_bazel_gwunleong/1cf6e3157016003ad3c69ac77713090f/external/com_google_absl/absl/strings/string_view.h:1:1" name="@com_google_absl//absl/strings:string_view.h">
+        <visibility-label name="//visibility:public"/>
+    </source-file>
+    <rule class="cc_library" location="/private/var/tmp/_bazel_gwunleong/1cf6e3157016003ad3c69ac77713090f/external/com_google_absl/absl/strings/BUILD.bazel:30:11" name="@com_google_absl//absl/strings:strings">
+        <string name="name" value="strings"/>
+        <list name="srcs">
+            <label value="@com_google_absl//absl/strings:ascii.cc"/>
+            <label value="@com_google_absl//absl/strings:charconv.cc"/>
+            <label value="@com_google_absl//absl/strings:escaping.cc"/>
+            <label value="@com_google_absl//absl/strings:internal/charconv_bigint.cc"/>
+            <label value="@com_google_absl//absl/strings:internal/charconv_bigint.h"/>
+            <label value="@com_google_absl//absl/strings:internal/charconv_parse.cc"/>
+            <label value="@com_google_absl//absl/strings:internal/charconv_parse.h"/>
+            <label value="@com_google_absl//absl/strings:internal/memutil.cc"/>
+            <label value="@com_google_absl//absl/strings:internal/memutil.h"/>
+            <label value="@com_google_absl//absl/strings:internal/stl_type_traits.h"/>
+            <label value="@com_google_absl//absl/strings:internal/str_join_internal.h"/>
+            <label value="@com_google_absl//absl/strings:internal/str_split_internal.h"/>
+            <label value="@com_google_absl//absl/strings:match.cc"/>
+            <label value="@com_google_absl//absl/strings:numbers.cc"/>
+            <label value="@com_google_absl//absl/strings:str_cat.cc"/>
+            <label value="@com_google_absl//absl/strings:str_replace.cc"/>
+            <label value="@com_google_absl//absl/strings:str_split.cc"/>
+            <label value="@com_google_absl//absl/strings:string_view.cc"/>
+            <label value="@com_google_absl//absl/strings:substitute.cc"/>
+        </list>
+        <list name="hdrs">
+            <label value="@com_google_absl//absl/strings:ascii.h"/>
+            <label value="@com_google_absl//absl/strings:charconv.h"/>
+            <label value="@com_google_absl//absl/strings:escaping.h"/>
+            <label value="@com_google_absl//absl/strings:internal/string_constant.h"/>
+            <label value="@com_google_absl//absl/strings:match.h"/>
+            <label value="@com_google_absl//absl/strings:numbers.h"/>
+            <label value="@com_google_absl//absl/strings:str_cat.h"/>
+            <label value="@com_google_absl//absl/strings:str_join.h"/>
+            <label value="@com_google_absl//absl/strings:str_replace.h"/>
+            <label value="@com_google_absl//absl/strings:str_split.h"/>
+            <label value="@com_google_absl//absl/strings:string_view.h"/>
+            <label value="@com_google_absl//absl/strings:strip.h"/>
+            <label value="@com_google_absl//absl/strings:substitute.h"/>
+        </list>
+        <list name="linkopts">
+            <string value="-ignore:4221"/>
+        </list>
+        <list name="copts">
+            <string value="/W3"/>
+            <string value="/DNOMINMAX"/>
+            <string value="/DWIN32_LEAN_AND_MEAN"/>
+            <string value="/D_CRT_SECURE_NO_WARNINGS"/>
+            <string value="/D_SCL_SECURE_NO_WARNINGS"/>
+            <string value="/D_ENABLE_EXTENDED_ALIGNED_STORAGE"/>
+            <string value="/bigobj"/>
+            <string value="/wd4005"/>
+            <string value="/wd4068"/>
+            <string value="/wd4180"/>
+            <string value="/wd4244"/>
+            <string value="/wd4267"/>
+            <string value="/wd4503"/>
+            <string value="/wd4800"/>
+            <string value="/W3"/>
+            <string value="/DNOMINMAX"/>
+            <string value="/DWIN32_LEAN_AND_MEAN"/>
+            <string value="/D_CRT_SECURE_NO_WARNINGS"/>
+            <string value="/D_SCL_SECURE_NO_WARNINGS"/>
+            <string value="/D_ENABLE_EXTENDED_ALIGNED_STORAGE"/>
+            <string value="-Wall"/>
+            <string value="-Wextra"/>
+            <string value="-Wcast-qual"/>
+            <string value="-Wconversion"/>
+            <string value="-Wfloat-overflow-conversion"/>
+            <string value="-Wfloat-zero-conversion"/>
+            <string value="-Wfor-loop-analysis"/>
+            <string value="-Wformat-security"/>
+            <string value="-Wgnu-redeclared-enum"/>
+            <string value="-Winfinite-recursion"/>
+            <string value="-Winvalid-constexpr"/>
+            <string value="-Wliteral-conversion"/>
+            <string value="-Wmissing-declarations"/>
+            <string value="-Woverlength-strings"/>
+            <string value="-Wpointer-arith"/>
+            <string value="-Wself-assign"/>
+            <string value="-Wshadow-all"/>
+            <string value="-Wstring-conversion"/>
+            <string value="-Wtautological-overlap-compare"/>
+            <string value="-Wundef"/>
+            <string value="-Wuninitialized"/>
+            <string value="-Wunreachable-code"/>
+            <string value="-Wunused-comparison"/>
+            <string value="-Wunused-local-typedefs"/>
+            <string value="-Wunused-result"/>
+            <string value="-Wvla"/>
+            <string value="-Wwrite-strings"/>
+            <string value="-Wno-float-conversion"/>
+            <string value="-Wno-implicit-float-conversion"/>
+            <string value="-Wno-implicit-int-float-conversion"/>
+            <string value="-Wno-implicit-int-conversion"/>
+            <string value="-Wno-shorten-64-to-32"/>
+            <string value="-Wno-sign-conversion"/>
+            <string value="-Wno-unknown-warning-option"/>
+            <string value="-DNOMINMAX"/>
+            <string value="-Wall"/>
+            <string value="-Wextra"/>
+            <string value="-Wcast-qual"/>
+            <string value="-Wconversion-null"/>
+            <string value="-Wformat-security"/>
+            <string value="-Wmissing-declarations"/>
+            <string value="-Woverlength-strings"/>
+            <string value="-Wpointer-arith"/>
+            <string value="-Wundef"/>
+            <string value="-Wunused-local-typedefs"/>
+            <string value="-Wunused-result"/>
+            <string value="-Wvarargs"/>
+            <string value="-Wvla"/>
+            <string value="-Wwrite-strings"/>
+            <string value="-DNOMINMAX"/>
+        </list>
+        <list name="deps">
+            <label value="@com_google_absl//absl/strings:internal"/>
+            <label value="@com_google_absl//absl/base:base"/>
+            <label value="@com_google_absl//absl/base:config"/>
+            <label value="@com_google_absl//absl/base:core_headers"/>
+            <label value="@com_google_absl//absl/base:endian"/>
+            <label value="@com_google_absl//absl/base:raw_logging_internal"/>
+            <label value="@com_google_absl//absl/base:throw_delegate"/>
+            <label value="@com_google_absl//absl/memory:memory"/>
+            <label value="@com_google_absl//absl/meta:type_traits"/>
+            <label value="@com_google_absl//absl/numeric:bits"/>
+            <label value="@com_google_absl//absl/numeric:int128"/>
+        </list>
+        <rule-input name="@com_google_absl//absl:clang-cl_compiler"/>
+        <rule-input name="@com_google_absl//absl:clang_compiler"/>
+        <rule-input name="@com_google_absl//absl:msvc_compiler"/>
+        <rule-input name="@com_google_absl//absl/base:base"/>
+        <rule-input name="@com_google_absl//absl/base:config"/>
+        <rule-input name="@com_google_absl//absl/base:core_headers"/>
+        <rule-input name="@com_google_absl//absl/base:endian"/>
+        <rule-input name="@com_google_absl//absl/base:raw_logging_internal"/>
+        <rule-input name="@com_google_absl//absl/base:throw_delegate"/>
+        <rule-input name="@com_google_absl//absl/memory:memory"/>
+        <rule-input name="@com_google_absl//absl/meta:type_traits"/>
+        <rule-input name="@com_google_absl//absl/numeric:bits"/>
+        <rule-input name="@com_google_absl//absl/numeric:int128"/>
+        <rule-input name="@com_google_absl//absl/strings:ascii.cc"/>
+        <rule-input name="@com_google_absl//absl/strings:ascii.h"/>
+        <rule-input name="@com_google_absl//absl/strings:charconv.cc"/>
+        <rule-input name="@com_google_absl//absl/strings:charconv.h"/>
+        <rule-input name="@com_google_absl//absl/strings:escaping.cc"/>
+        <rule-input name="@com_google_absl//absl/strings:escaping.h"/>
+        <rule-input name="@com_google_absl//absl/strings:internal"/>
+        <rule-input name="@com_google_absl//absl/strings:internal/charconv_bigint.cc"/>
+        <rule-input name="@com_google_absl//absl/strings:internal/charconv_bigint.h"/>
+        <rule-input name="@com_google_absl//absl/strings:internal/charconv_parse.cc"/>
+        <rule-input name="@com_google_absl//absl/strings:internal/charconv_parse.h"/>
+        <rule-input name="@com_google_absl//absl/strings:internal/memutil.cc"/>
+        <rule-input name="@com_google_absl//absl/strings:internal/memutil.h"/>
+        <rule-input name="@com_google_absl//absl/strings:internal/stl_type_traits.h"/>
+        <rule-input name="@com_google_absl//absl/strings:internal/str_join_internal.h"/>
+        <rule-input name="@com_google_absl//absl/strings:internal/str_split_internal.h"/>
+        <rule-input name="@com_google_absl//absl/strings:internal/string_constant.h"/>
+        <rule-input name="@com_google_absl//absl/strings:match.cc"/>
+        <rule-input name="@com_google_absl//absl/strings:match.h"/>
+        <rule-input name="@com_google_absl//absl/strings:numbers.cc"/>
+        <rule-input name="@com_google_absl//absl/strings:numbers.h"/>
+        <rule-input name="@com_google_absl//absl/strings:str_cat.cc"/>
+        <rule-input name="@com_google_absl//absl/strings:str_cat.h"/>
+        <rule-input name="@com_google_absl//absl/strings:str_join.h"/>
+        <rule-input name="@com_google_absl//absl/strings:str_replace.cc"/>
+        <rule-input name="@com_google_absl//absl/strings:str_replace.h"/>
+        <rule-input name="@com_google_absl//absl/strings:str_split.cc"/>
+        <rule-input name="@com_google_absl//absl/strings:str_split.h"/>
+        <rule-input name="@com_google_absl//absl/strings:string_view.cc"/>
+        <rule-input name="@com_google_absl//absl/strings:string_view.h"/>
+        <rule-input name="@com_google_absl//absl/strings:strip.h"/>
+        <rule-input name="@com_google_absl//absl/strings:substitute.cc"/>
+        <rule-input name="@com_google_absl//absl/strings:substitute.h"/>
+        <rule-default-setting name="parse_headers"/>
+    </rule>
+    <source-file location="/private/var/tmp/_bazel_gwunleong/1cf6e3157016003ad3c69ac77713090f/external/com_google_absl/absl/strings/strip.h:1:1" name="@com_google_absl//absl/strings:strip.h">
+        <visibility-label name="//visibility:public"/>
+    </source-file>
+    <source-file location="/private/var/tmp/_bazel_gwunleong/1cf6e3157016003ad3c69ac77713090f/external/com_google_absl/absl/strings/substitute.cc:1:1" name="@com_google_absl//absl/strings:substitute.cc">
+        <visibility-label name="//visibility:public"/>
+    </source-file>
+    <source-file location="/private/var/tmp/_bazel_gwunleong/1cf6e3157016003ad3c69ac77713090f/external/com_google_absl/absl/strings/substitute.h:1:1" name="@com_google_absl//absl/strings:substitute.h">
+        <visibility-label name="//visibility:public"/>
+    </source-file>
+    <rule class="constraint_setting" location="/private/var/tmp/_bazel_gwunleong/1cf6e3157016003ad3c69ac77713090f/external/platforms/cpu/BUILD:14:19" name="@platforms//cpu:cpu">
+        <string name="name" value="cpu"/>
+    </rule>
+    <rule class="constraint_value" location="/private/var/tmp/_bazel_gwunleong/1cf6e3157016003ad3c69ac77713090f/external/platforms/cpu/BUILD:108:17" name="@platforms//cpu:wasm32">
+        <string name="name" value="wasm32"/>
+        <label name="constraint_setting" value="@platforms//cpu:cpu"/>
+        <rule-input name="@platforms//cpu:cpu"/>
+    </rule>
+    <rule class="constraint_value" location="/private/var/tmp/_bazel_gwunleong/1cf6e3157016003ad3c69ac77713090f/external/platforms/cpu/BUILD:113:17" name="@platforms//cpu:wasm64">
+        <string name="name" value="wasm64"/>
+        <label name="constraint_setting" value="@platforms//cpu:cpu"/>
+        <rule-input name="@platforms//cpu:cpu"/>
+    </rule>
+</query>
